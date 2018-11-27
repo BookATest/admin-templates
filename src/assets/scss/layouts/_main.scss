@@ -1,0 +1,5 @@
+/* Main */
+.base-layout__main {
+  @include grid-container;
+  min-height:100vh;
+}

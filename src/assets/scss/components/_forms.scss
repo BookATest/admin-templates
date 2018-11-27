@@ -1,0 +1,329 @@
+// 6.0 Forms
+// 6.1 Form Inputs
+
+.form {
+  // 6.1.1 Drop Down
+  &__drop-down {
+    label {
+      @include innerPageHeader();
+      display: inline-block;
+      margin: 0 56px 0 0;
+      padding: 0;
+      vertical-align: middle;
+    }
+
+    > div {
+      position: relative;
+      display: inline-block;
+      @include border-top-radius(8px);
+      @include border-bottom-radius(8px);
+      width: auto;
+      min-width: 160px;
+      height: 40px;
+      background-color: $white;
+      border: solid 1px $mineShaft50;
+      vertical-align: middle;
+
+      &:after {
+        content: '\e803';
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        font-size: 10px;
+        line-height: 40px;
+        position: absolute;
+        top: 0;
+        right: 16px;
+        width: 10px;
+        height: 40px;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      select {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        height: 40px;
+        margin: 0;
+        padding: 0 16px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer;
+
+      }
+
+      &:hover {
+        border: solid 1px $mineShaft;
+      }
+    }
+
+    &--disabled {
+
+      label {
+        color: $mineShaft40;
+      }
+
+      > div {
+        color: $mineShaft40;
+        border: solid 1px $mineShaft40;
+
+        select {
+          cursor: not-allowed;
+        }
+
+        &:hover {
+          border: solid 1px $mineShaft40;
+        }
+      }
+    }
+  }
+  // 6.1.2 Text Input
+  &__text {
+    label {
+      @include innerPageHeader();
+      display: inline-block;
+      margin: 0 56px 0 0;
+      padding: 0;
+      vertical-align: middle;
+    }
+
+    > div {
+      position: relative;
+      display: inline-block;
+      @include border-top-radius(8px);
+      @include border-bottom-radius(8px);
+      width: auto;
+      min-width: 160px;
+      height: 40px;
+      background-color: $white;
+      border: solid 1px $mineShaft50;
+      vertical-align: middle;
+
+      input {
+        background-color: transparent;
+        border: none;
+        width: calc(100% - 32px);
+        height: 40px;
+        margin: 0;
+        padding: 0 16px;
+      }
+
+      &:focus {
+        border: solid 1px $blueViolet;
+      }
+
+      &:hover {
+        border: solid 1px $blueViolet50;
+      }
+    }
+
+    &--disabled {
+      > div {
+        color: $mineShaft40;
+        border: solid 1px $mineShaft40;
+
+        input {
+          cursor: not-allowed;
+        }
+
+        &:hover {
+          border: solid 1px $mineShaft40;
+        }
+      }
+    }
+  }
+
+  &__search {
+    label {
+      @include innerPageHeader();
+      display: inline-block;
+      margin: 0 56px 0 0;
+      padding: 0;
+      vertical-align: middle;
+    }
+
+    > div {
+      position: relative;
+      display: inline-block;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      width: 160px;
+      height: 40px;
+      background-color: $white;
+      border: solid 1px $mineShaft50;
+      vertical-align: middle;
+
+      input {
+        background-color: transparent;
+        border: none;
+        width: calc((100% - 32px) - 42px);
+        height: 40px;
+        margin: 0;
+        padding: 0 16px;
+        display: inline-block;
+      }
+
+      &:focus {
+        border: solid 1px $blueViolet;
+      }
+
+      &:hover {
+        border: solid 1px $blueViolet50;
+      }
+    }
+
+    button {
+      position: relative;
+      display: inline-block;
+      float: right;
+      border-top-left-radius: 0;
+      border-top-right-radius: 6px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 6px;
+      width: auto;
+      min-width: 40px;
+      height: 40px;
+      background-color: $mineShaft10;
+      font-size: 16px;
+      border-left: 0;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+
+    &--disabled {
+      > div {
+        color: $mineShaft40;
+        border: solid 1px $mineShaft40;
+
+        input {
+          cursor: not-allowed;
+        }
+
+        &:hover {
+          border: solid 1px $mineShaft40;
+        }
+      }
+    }
+  }
+
+  &__textarea {
+    label {
+      @include innerPageHeader();
+      display: block;
+      margin: 0 0 32px;
+      padding: 0;
+    }
+
+    > div {
+      position: relative;
+      display: inline-block;
+      @include border-top-radius(8px);
+      @include border-bottom-radius(8px);
+      width: auto;
+      min-width: 300px;
+      height: auto;
+      background-color: $white;
+      border: solid 1px $mineShaft50;
+      vertical-align: middle;
+
+      textarea {
+        background-color: transparent;
+        border: none;
+        width: calc(100% - 32px);
+        height: auto;
+        min-height: 117px;
+        margin: 0;
+        padding: 16px;
+      }
+
+      &:focus {
+        border: solid 1px $blueViolet;
+      }
+
+      &:hover {
+        border: solid 1px $blueViolet50;
+      }
+    }
+
+    &--disabled {
+      > div {
+        color: $mineShaft40;
+        border: solid 1px $mineShaft40;
+
+        input {
+          cursor: not-allowed;
+        }
+
+        &:hover {
+          border: solid 1px $mineShaft40;
+        }
+      }
+    }
+  }
+
+  &__checkbox {
+    > div {
+
+      label {
+        @include innerPageText();
+        cursor: pointer;
+        position: relative;
+        padding: 0 0 0 30px;
+      }
+
+      input {
+        display: none;
+      }
+      input + label {
+        &:before {
+          content: '';
+          position: absolute;
+          top: 4px;
+          left: 0;
+          width: 14px;
+          height: 14px;
+          background-color: $white;
+          box-shadow: inset 0 0 0 2px $mineShaft50;
+        }
+      }
+
+      input:checked + label {
+        &:after {
+          content: '\e819';
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          width: 14px;
+          height: 14px;
+          font-family: "fontello";
+          font-style: normal;
+          font-weight: normal;
+          font-size:26px;
+        }
+      }
+    }
+    &--disabled {
+      label {
+        color: $mineShaft40;
+      }
+      input + label {
+        &:before {
+          box-shadow: inset 0 0 0 2px $mineShaft40 !important;
+        }
+
+        cursor: not-allowed;
+      }
+      input:checked + label {
+        &:after {
+          color: $mineShaft40;
+        }
+
+        cursor: not-allowed;
+      }
+    }
+  }
+}

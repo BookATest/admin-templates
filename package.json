@@ -1,0 +1,39 @@
+{
+  "name": "prototype-boilerplate",
+  "version": "1.0.0",
+  "description": "A prototype boilerplate by Adam Wadsworth",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bourbon",
+    "bourbon-neat",
+    "browser-sync",
+    "gulp",
+    "gulp-autoprefixer",
+    "gulp-babel",
+    "gulp-concat",
+    "gulp-sass"
+  ],
+  "author": {
+    "name": "Adam Wadsworth",
+    "email": "hello@adamwadsworth.com",
+    "url": "http://adamwadsworth.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bourbon": "^5.1.0",
+    "bourbon-neat": "^2.1.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "gulp-babel": "^8.0.0"
+  }
+}

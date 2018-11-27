@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="base-layout">
+
+    <div class="base-layout__header">
+      <div class="header">
+
+        <!-- Header -->
+
+      </div>
+    </div>
+
+    <div class="base-layout__sidebar">
+      <div class="sidebar">
+        <div class="main-navigation">
+          <nav>
+            <ul>
+              <li><a href="./appointments/default.html" title=""><i class="icon icon--appointments"></i><span>appointments</span></a></li>
+              <li><a href="./reporting/reporting.html" title=""><i class="icon icon--reports"></i><span>reporting</span></a></li>
+              <li class="submenu">
+                <a href="" title="" id="submenu"><i class="icon icon--settings"></i><span>settings</span></a>
+                <ul>
+                  <li><a href="./settings/my-profile.html" title=""><span>my profile</span></a></li>
+                  <li><a href="./settings/calendar.html" title=""><span>calendar</span></a></li>
+                  <li><a href="./settings/notifications.html" title=""><span>notifications</span></a></li>
+                  <li><a href="./settings/users.html" title=""><span>users</span></a></li>
+                  <li><a href="./settings/location.html" title=""><span>location</span></a></li>
+                  <li><a href="./settings/branding.html" title=""><span>branding</span></a></li>
+                  <li><a href="./settings/configuration.html" title=""><span>configuration</span></a></li>
+                </ul>
+              </li>
+              <li><a href="./users/users.html" title=""><i class="icon icon--users"></i><span>service users</span></a></li>
+            </ul>
+          </nav>
+          <a href="" class="help"><span>Help</span> <i class="icon icon--help"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="base-layout__main">
+      <div class="main">
+
+        <!-- Calendar -->
+        <div class="calendar calendar--default">
+
+          <!-- Calendar - Main (Left) -->
+          <div class="calendar__main js--calendar__main">
+            <div class="main">
+
+              <!-- Calendar - Search -->
+              <div class="search">
+                <!-- Search -->
+                <form class="form">
+                  <div class="form__search">
+                    <label for="search">Search</label>
+                    <div>
+                      <input type="text" id="search" name="search"></input>
+                      <button><i class="icon icon--arrowright"></i></button>
+                    </div>
+                  </div>
+                </form>
+                <form class="form">
+                  <!-- Location -->
+                  <div class="form__drop-down">
+                    <label for="dropdown"><span>location</span></label>
+                    <div>
+                      <select id="dropdown" name="dropdown">
+                        <option>Leeds</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                        <option>Option 5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Filter -->
+                  <div class="form__drop-down">
+                    <label for="dropdown">Filter by</label>
+                    <div>
+                      <select id="dropdown" name="dropdown">
+                        <option>Person</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                        <option>Option 5</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Calendar - Controls -->
+              <div class="controls">
+                <ul>
+                  <li><button><i class="icon icon--lg-arrowleft"></i></button></li>
+                  <li><span>WC / 5th March</span></li>
+                  <li><button><i class="icon icon--lg-arrowright"></i></button></li>
+                </ul>
+              </div>
+
+              <!-- Calendar - Table -->
+              <div class="table">
+                <table cellpadding="8" cellspacing="8">
+                  <thead>
+                    <tr>
+                      <th colspan="1"></th>
+                      <th colspan="1"><span>Monday</span></th>
+                      <th colspan="1"><span>Tuesday</span></th>
+                      <th colspan="1"><span>Wednesday</span></th>
+                      <th colspan="1"><span>Thursday</span></th>
+                      <th colspan="1"><span>Friday</span></th>
+                      <th colspan="1"><span>Saturday</span></th>
+                      <th colspan="1"><span>Sunday</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="1"></td>
+                      <td colspan="7">
+                        <div class="pod-title"><span>Morning</span></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">8:00</span><span class="time time--b">am</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="8:00am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="8:00am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="8:00am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="8:00am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="8:00am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="8:00am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="8:00am" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">8:30</span><span class="time time--b">am</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="8:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="8:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="8:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="8:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="8:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials-repeat button__calendar--available-cw-initials-repeat--default js--popup-open" data-type="available" data-date="Saturday 17 March" data-time="8:30am"><span>LM</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="8:30am" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">9:00</span><span class="time time--b">am</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--booked-cw-initials-repeat button__calendar--booked-cw-initials-repeat--default js--popup-open" data-type="booked" data-date="Monday 12 March" data-time="9:00am" data-patient="Libby Bruce" data-with="Ethan Tomlinson" data-where="Mesmac Leeds"><span>ET</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--booked-cw-initials-repeat button__calendar--booked-cw-initials-repeat--default js--popup-open" data-type="booked" data-date="Tueday 13 March" data-time="9:00am" data-patient="Kyle Cooke" data-with="Robert Walters" data-where="Mesmac Leeds"><span>RW</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--booked-cw-initials-repeat button__calendar--booked-cw-initials-repeat--default js--popup-open" data-type="booked" data-date="Wednesday 14 March" data-time="9:00am" data-patient="Melissa Macdonald" data-with="Demi Lawson" data-where="Mesmac Leeds"><span>DL</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials-repeat button__calendar--available-cw-initials-repeat--default js--popup-open" data-type="available" data-date="Thursday 15 March" data-time="9:00am"><span>LM</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials-repeat button__calendar--available-cw-initials-repeat--default js--popup-open" data-type="available" data-date="Friday 16 March" data-time="9:00am"><span>LM</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials-repeat button__calendar--available-cw-initials-repeat--default js--popup-open" data-type="available" data-date="Saturday 17 March" data-time="9:00am"><span>LM</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials-repeat button__calendar--available-cw-initials-repeat--default js--popup-open" data-type="available" data-date="Sunday 18 March" data-time="9:00am"><span>LM</span></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">9:30</span><span class="time time--b">am</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="9:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="9:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="9:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="9:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="9:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="9:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="9:30am" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">10:00</span><span class="time time--b">am</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="10:00am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="10:00am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="10:00am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="10:00am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="10:00am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="10:00am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="10:00am" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">10:30</span><span class="time time--b">am</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials button__calendar--available-cw-initials--default js--popup-open" data-type="available" data-date="Monday 12 March" data-time="10:30am"><span>LM</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials button__calendar--available-cw-initials--default js--popup-open" data-type="available" data-date="Tueday 13 March" data-time="10:30am"><span>LM</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials button__calendar--available-cw-initials--default js--popup-open" data-type="available" data-date="Wednesday 14 March" data-time="10:30am"><span>LM</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="10:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="10:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="10:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="10:30am" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">11:00</span><span class="time time--b">am</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials-repeat button__calendar--available-cw-initials-repeat--default js--popup-open" data-type="available" data-date="Monday 12 March" data-time="11:00am"><span>LM</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials-repeat button__calendar--available-cw-initials-repeat--default js--popup-open" data-type="available" data-date="Tueday 13 March" data-time="11:00am"><span>LM</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials-repeat button__calendar--available-cw-initials-repeat--default js--popup-open" data-type="available" data-date="Wednesday 14 March" data-time="11:00am"><span>LM</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--booked-cw-initials-repeat button__calendar--booked-cw-initials-repeat--default js--popup-open" data-type="booked" data-date="Thursday 15 March" data-time="11:00am" data-patient="Melissa Macdonald" data-with="Demi Lawson" data-where="Mesmac Leeds"><span>DL</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials-repeat button__calendar--available-cw-initials-repeat--default js--popup-open" data-type="available" data-date="Friday 16 March" data-time="11:00am"><span>LM</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--available-cw-initials-repeat button__calendar--available-cw-initials-repeat--default js--popup-open" data-type="available" data-date="Saturday 16 March" data-time="11:00am"><span>LM</span></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="11:00am" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">11:30</span><span class="time time--b">am</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="11:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="11:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="11:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="11:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="11:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="11:30am" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="11:30am" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"></td>
+                      <td colspan="7">
+                        <div class="pod-title"><span>Afternoon</span></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">12:00</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="12:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="12:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="12:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="12:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="12:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="12:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="12:00pm" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">12:30</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="12:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="12:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="12:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="12:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="12:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="12:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="12:30pm" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">1:00</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="1:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="1:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="1:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="1:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="1:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="1:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="1:00pm" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">1:30</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="1:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="1:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="1:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="1:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="1:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="1:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="1:30pm" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">2:00</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="2:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="2:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="2:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="2:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="2:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="2:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="2:00pm" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">2:30</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="2:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="2:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="2:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="2:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="2:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="2:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="2:30pm" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">3:00</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="3:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="3:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="3:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="3:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="3:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="3:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="3:00pm" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">3:30</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="3:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="3:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="3:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="3:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="3:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="3:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="3:30pm" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">4:00</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="4:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="4:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="4:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="4:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="4:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="4:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="4:00pm" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">4:30</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="4:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="4:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="4:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="4:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="4:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="4:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="4:30pm" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"></td>
+                      <td colspan="7">
+                        <div class="pod-title"><span>Evening</span></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">5:00</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="5:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="5:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="5:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="5:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="5:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="5:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="5:00pm" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">5:30</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="5:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="5:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="5:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="5:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="5:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="5:30pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="5:30pm" disabled></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><span class="time time--a">6:00</span><span class="time time--b">pm</span></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Monday 12 March" data-time="6:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Tuesday 13 March" data-time="6:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Wednesday 14 March" data-time="6:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Thursday 15 March" data-time="6:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Friday 16 March" data-time="6:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Saturday 17 March" data-time="6:00pm" disabled></button></td>
+                      <td colspan="1"><button class="button button__calendar button__calendar--not-available js--popup-open" data-type="add-availability" data-date="Sunday 18 March" data-time="6:00pm" disabled></button></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th colspan="1">
+                        <ul>
+                          <li><span>Not available</span></li>
+                          <li><span>Available</span></li>
+                          <li><span>Booked</span></li>
+                        </ul>
+                        <button class="button button__secondary button__secondary--b" onclick="location.href = '/appointments/manage-my-appointments.html';"><span>Manage my appointments</span></button>
+                      </th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Calendar - Sidebar (Right) -->
+          <div class="calendar__sidebar calendar__sidebar calendar__sidebar--active js--calendar-sidebar">
+            <div class="sidebar">
+
+              <!-- Popup -->
+              <div class="popup">
+
+                <!-- Available -->
+                <div class="available js--popup-block js--popup-block--available" style="display:none;">
+                  <div class="popup__header">
+                    <span>Available</span>
+                  </div>
+                  <div class="popup__main">
+                    <form>
+                      <div class="available--date">
+                        <span class="js--popup-date-text">Sunday 12 March</span>
+                      </div>
+                      <div class="available--time">
+                        <span class="js--popup-time-text">11:00 am</span>
+                      </div>
+                      <hr>
+                      <div class="available--form">
+                        <div class="form__checkbox form__checkbox--disabled">
+                          <div>
+                            <input id="checkbox" name="checkbox" type="checkbox" checked disabled>
+                            <label for="checkbox">One off</label>
+                          </div>
+                        </div>
+                        <div class="form__drop-down form__drop-down--disabled">
+                          <label for="dropdown">Repeatable</label>
+                          <div>
+                            <select id="dropdown" name="dropdown" disabled>
+                              <option>None</option>
+                              <option>Daily</option>
+                              <option>Weekly</option>
+                              <option>Monthly</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="available--user">
+                        <button class="button button__primary button__primary--a" disabled>Delete</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- Booked - Edit -->
+                <div class="booked js--popup-block js--popup-block--booked" style="display:none;">
+                  <div class="popup__header">
+                    <span>Booked</span>
+                  </div>
+                  <div class="popup__main">
+                    <div class="booked--date">
+                      <span class="js--popup-date-text">Sunday 12 March</span>
+                    </div>
+                    <div class="booked--time">
+                      <span class="js--popup-time-text">11:00 am</span>
+                    </div>
+                    <hr>
+                    <div class="booked--patient">
+                      <span>patient</span><span class="js--popup-patient-text">Robert</span>
+                    </div>
+                    <div class="booked--with">
+                      <span>with</span><span class="js--popup-with-text">Alex</span>
+                    </div>
+                    <div class="booked--where">
+                      <span>where</span><span class="js--popup-where-text">Mesmac Leeds</span>
+                    </div>
+                    <hr>
+                    <div class="booked--user">
+                      <button class="button button__primary button__primary--a">View user</button>
+                      <button class="button button__inline button__inline--subtle">Cancel appointment?</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="popup__footer">
+                <button class="js--popup-close"><span>Close</span><i class="icon icon--cross"></i></button>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

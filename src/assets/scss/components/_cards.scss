@@ -1,0 +1,46 @@
+// 7.0 Cards
+// 7.1 Card Framing
+
+.card-frame {
+  // @include border-top-radius(6px);
+  // @include border-bottom-radius(6px);
+
+  // 7.1.1 Card Frame - Popout
+  &--pop-out {
+    background-color: $white;
+    box-shadow: 0 4px 6px 2px $black25;
+  }
+  // 7.1.2 Card Frame - Default
+  &--default {
+    background-color: $blueViolet10;
+    border: solid 1px $blueViolet;
+  }
+  // 7.1.3 Card Frame - Title Background 1
+  &--title-background-1 {
+    background-color: $grandis;
+  }
+  // 7.1.4 Card Frame - Title Background 2
+  &--title-background-2 {
+    background-color: $wildSand;
+  }
+  // 7.1.5 Card Frame - Title Background 3
+  &--title-background-3 {
+    background-color: $apricot;
+  }
+  // 7.1.6 Card Frame - Title Background 4
+  &--title-background-4 {
+    background-color: $cornflowerBlue80;
+  }
+  // 7.1.7 Card Frame - Title Background 5
+  &--title-background-5 {
+    background-color: $blueViolet50;
+  }
+  // 7.1.8 Card Frame - Warning Call Out
+  &--warning-call-out {
+    background-color: $apricot50;
+  }
+  // 7.1.9 Card Frame - Warning Call Out
+  &--help-call-out {
+    background-color: $mineShaft10;
+  }
+}

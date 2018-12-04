@@ -247,15 +247,34 @@
     height: 160px;
     text-align: center;
 
-    img {
-      display: block;
-      margin: 0 auto 16px;
-      width: 100px;
-      height: 100px;
+    &--avatar {
+      img {
+        display: block;
+        margin: 0 auto 16px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    &--logo {
+      img {
+        display: block;
+        margin: 0 auto 8px auto;
+        width: 118px;
+        height: auto;
+      }
     }
 
     span {
       @include innerPageHeader();
+
+      &.title {
+        @include xsBody();
+        color:$mineShaft !important;
+      }
+
+      display: block;
+      margin:0 0 8px 0 !important;
     }
   }
 
@@ -360,7 +379,7 @@
       @include border-bottom-radius(8px);
       border: 1px solid $mineShaft;
       max-width: calc(358px - 2px);
-      
+
       &:hover {
         background-color: $wildSand;
         border-color: $blueViolet50;
@@ -506,5 +525,30 @@
         }
       }
     }
+  }
+
+  &__colour {
+    @include border-top-radius(33px);
+    @include border-bottom-radius(33px);
+
+    width:33px;
+    height:33px;
+    background: $white;
+    border:solid 1px $alto;
+
+    input {
+      display: block;
+      margin:4px;
+      padding:0;
+      width:23px;
+      height:23px;
+      background:$alto;
+      border:0;
+      text-indent: -9999px;
+      cursor: pointer;
+      @include border-top-radius(23px);
+      @include border-bottom-radius(23px);
+    }
+
   }
 }

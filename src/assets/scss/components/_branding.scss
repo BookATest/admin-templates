@@ -1,0 +1,13 @@
+.branding {
+  h2 {
+    @include innerPageTitle();
+    margin: 0 0 40px;
+    padding: 0;
+  }
+
+  p {
+    @include body();
+    margin: 0 0 40px;
+    padding: 0;
+  }
+}

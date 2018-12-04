@@ -249,4 +249,15 @@
     }
   }
 
+  .branding {
+    margin: 0;
+    padding: 32px;
+    width: calc(100% - 64px);
+    height: calc(100vh - 64px);
+    overflow: scroll;
+
+    > div {
+      @include grid-column(6, $base-layout-grid);
+    }
+  }
 }

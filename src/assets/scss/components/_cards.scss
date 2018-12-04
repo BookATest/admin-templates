@@ -91,7 +91,8 @@
     @include border-top-radius(6px);
     @include border-bottom-radius(6px);
     background-color: $mineShaft10;
-    width: calc(100% - 48px) !important;
+    width: calc(100% - 48px);
+    max-width: calc(350px - 48px) !important;
     margin: 0 0 32px;
     padding: 24px;
 

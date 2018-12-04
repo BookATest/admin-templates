@@ -346,4 +346,161 @@
       }
     }
   }
+
+  &__amend {
+    width: 100%;
+    max-width: 358px;
+    min-height: 42px;
+    cursor: pointer;
+    margin: 0 0 8px;
+    padding: 0;
+    &--add {
+      @include border-top-radius(8px);
+      @include border-bottom-radius(8px);
+      border: 1px solid $mineShaft;
+
+      &:hover {
+        background-color: $wildSand;
+        border-color: $blueViolet50;
+      }
+
+      &:active {
+        background-color: $wildSand;
+        border-color: $blueViolet;
+      }
+
+      .button__amend__add {
+        background: transparent;
+        float: left;
+        border: 0;
+        margin: 0;
+        padding: 0 16px;
+        width: 100%;
+        height: 42px;
+        color: $mineShaft;
+        cursor: pointer;
+        text-align: right;
+        float: right;
+
+        span {
+          margin-right: 8px;
+          @include dosisMedium();
+          font-size: 16px;
+          line-height: 20px;
+        }
+        i {
+          font-size:16px;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &--inactive {
+        background-color: transparent;
+        border-color: $mineShaft50 !important;
+
+
+
+        &:active,
+        &:hover {
+          background-color: transparent;
+          border-color: $mineShaft50 !important;
+        }
+
+        .button__amend__add {
+          cursor: not-allowed;
+          color:$mineShaft50;
+          &:hover {
+            text-decoration: none !important;
+          }
+        }
+      }
+    }
+    &--edit {
+      &:hover {
+        .button__amend__edit,
+        .button__amend__input,
+        .button__amend__reorder {
+          background-color: $blueViolet10 !important;
+        }
+      }
+
+      &:active {
+        .button__amend__edit,
+        .button__amend__input,
+        .button__amend__reorder {
+          border-color: $blueViolet !important;
+        }
+      }
+
+      .button__amend__reorder {
+        background: transparent;
+        float: left;
+        border: 0;
+        margin: 0;
+        padding: 0 0 0 16px;
+        height: 42px;
+        @include border-left-radius(8px);
+        border: solid 1px $mineShaft;
+        border-right: 0;
+        cursor: pointer;
+
+        &:hover {
+          color: $blueViolet;
+        }
+      }
+
+      .button__amend__input {
+        width: calc(((100% - 43px) - 80px) - 17px);
+        height: 40px;
+        background: transparent;
+        float: left;
+        border: 0;
+        margin: 0;
+        padding: 0 16px;
+        border: solid 1px $mineShaft;
+        border-left: 0;
+        border-right: 0;
+        cursor: pointer;
+
+
+        @include dosisMedium();
+        font-size: 16px;
+        line-height: 20px;
+
+
+      }
+
+      .button__amend__edit {
+        background: $blueViolet10;
+        float: left;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        width: 80px;
+        height: 42px;
+        @include border-right-radius(8px);
+        border: solid 1px $blueViolet;
+        color: $blueViolet;
+        cursor: pointer;
+
+        span {
+          margin-right: 8px;
+          @include dosisMedium();
+          font-size: 16px;
+          line-height: 20px;
+        }
+        i {
+          font-size: 16px;
+        }
+
+        &:active,
+        &:hover {
+          background: $blueViolet30 !important;
+        }
+      }
+    }
+  }
 }

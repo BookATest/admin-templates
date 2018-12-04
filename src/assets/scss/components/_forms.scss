@@ -51,7 +51,7 @@
       margin: 0 0 24px 0 !important;
 
       > div {
-        min-width:204px; 
+        min-width:204px;
       }
     }
 
@@ -61,6 +61,34 @@
       text-align: left;
     }
   }
+
+  &--location-edit {
+    .form__text {
+      margin: 0 0 24px 0 !important;
+
+      > div {
+        min-width:204px;
+      }
+    }
+
+    .form__textarea {
+      label {
+        display: inline-block !important;
+        vertical-align: top;
+      }
+      textarea {
+        min-width:235px !important;
+        min-height:85px !important;
+      }
+    }
+
+    label {
+      width: 70px;
+      margin: 0 32px 0 0 !important;
+      text-align: left;
+    }
+  }
+
   &--privacy-policy {
     .form__checkbox {
       display: inline-block;

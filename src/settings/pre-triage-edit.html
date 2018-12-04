@@ -29,7 +29,7 @@
                   <li><a href="./settings/calendar.html" title=""><span>calendar</span></a></li>
                   <li><a href="./settings/notifications.html" title=""><span>notifications</span></a></li>
                   <li><a href="./settings/users.html" title=""><span>users</span></a></li>
-                <li><a href="./settings/location.html" title=""><span>location</span></a></li>
+                  <li><a href="./settings/location.html" title=""><span>location</span></a></li>
                   <li><a href="./settings/branding.html" title=""><span>branding</span></a></li>
                   <li><a href="./settings/configuration.html" title=""><span>configuration</span></a></li>
                 </ul>
@@ -43,7 +43,76 @@
     </div>
 
     <div class="base-layout__main">
-      Main
+      <div class="main">
+
+        <!-- Pre Triage Questions -->
+        <div class="pre-triage-questions">
+
+          <div class="pre-triage-questions__intro">
+            <div>
+              <h2>Pre triage questions <i class="icon icon--edit"></i></h2>
+            </div>
+          </div>
+          <div class="pre-triage-questions__question">
+            <div class="">
+              <form class="form form--pre-triage-questions">
+                <div class="form__text">
+                  <label for="name"><span>Question</span></label>
+                  <div>
+                      <input type="text" id="name" name="name" value="What is your gender?">
+                  </div>
+                </div>
+                <div class="form__text">
+                  <label><span>Response</span></label>
+                  <label class="button button__radio"><input name="group" type="radio"><span>Yes / No<span></span></span></label>
+                  <label class="button button__radio"><input checked="checked" name="group" type="radio"><span>Drop down</span></label>
+                </div>
+              </form>
+            </div>
+
+            <div class="">
+
+              <div class="card card--warning">
+                <div class="warning__action">
+                  <button class="button button__secondary button__secondary--a"><span>Delete question</span></button>
+                </div>
+                <div class="warning__icon">
+                  <i class="icon icon--warning"></i>
+                </div>
+                <div class="warning__content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque dictum</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="pre-triage-questions__options">
+            <h2>Dropdown options</h2>
+            <div class="form__dropdown-options form__dropdown-options--edit form__dropdown-options--edit--active">
+              <input type="text" name="text" id="text" value="Male"></input>
+              <button><i class="icon icon--crosscircle"></i></button>
+            </div>
+            <div class="form__dropdown-options form__dropdown-options--edit">
+              <input type="text" name="text" id="text" value="Male"></input>
+              <button><i class="icon icon--crosscircle"></i></button>
+            </div>
+            <div class="form__dropdown-options form__dropdown-options--edit">
+              <input type="text" name="text" id="text" value="Male"></input>
+              <button><i class="icon icon--crosscircle"></i></button>
+            </div>
+            <div class="form__dropdown-options form__dropdown-options--add">
+              <button><span>Add</span><i class="icon icon--pluscircle"></i></button>
+            </div>
+    
+          </div>
+
+          <div class="pre-triage-questions__action">
+            <button class="button button__primary button__primary--b"><span>Save</span></button>
+          </div>
+        </div>
+
+      </div>
     </div>
 
   </div>

@@ -1,5 +1,134 @@
 /* Main */
 .base-layout__main {
   @include grid-container;
-  min-height:100vh;
+  min-height: 100vh;
+
+  .settings {
+    margin: 0;
+    padding: 16px;
+    width: calc(100% - 32px);
+    height: calc(100vh - 32px);
+    overflow: scroll;
+  }
+
+  .my-profile {
+    margin: 0;
+    padding: 32px;
+    width: calc(100% - 64px);
+    height: calc(100vh - 64px);
+    overflow: scroll;
+
+    &__account-details {
+      @include grid-column(12, $base-layout-grid);
+
+      > div {
+        @include grid-column(6, $base-layout-grid);
+      }
+      border-bottom: dashed 1px rgba(0,0,0,0.1);
+      margin: 0 0 32px;
+      padding: 0 0 32px;
+    }
+
+    &__privacy-settings {
+      @include grid-column(12, $base-layout-grid);
+
+      > div {
+        @include grid-column(6, $base-layout-grid);
+      }
+    }
+  }
+
+  .settings-calendar {
+    margin: 0;
+    padding: 32px;
+    width: calc(100% - 64px);
+    height: calc(100vh - 64px);
+    overflow: scroll;
+
+    &__my-calendar-feed {
+      @include grid-column(12, $base-layout-grid);
+
+      border-bottom: dashed 1px rgba(0,0,0,0.1);
+      margin: 0 0 32px;
+      padding: 0 0 32px;
+
+      > div {
+        @include grid-column(8, $base-layout-grid);
+      }
+    }
+
+    &__all-appointments-calendar {
+      @include grid-column(12, $base-layout-grid);
+
+      > div {
+        @include grid-column(8, $base-layout-grid);
+      }
+    }
+  }
+
+  .notifications {
+    margin: 0;
+    padding: 32px;
+    width: calc(100% - 64px);
+    height: calc(100vh - 64px);
+    overflow: scroll;
+  }
+
+  .users {
+    margin: 0;
+    padding: 32px;
+    width: calc(100% - 64px);
+    height: calc(100vh - 64px);
+    overflow: scroll;
+    &__intro {
+      @include grid-column(12, $base-layout-grid);
+
+      border-bottom: dashed 1px rgba(0,0,0,0.1);
+      margin: 0 0 32px;
+      padding: 0 0 32px;
+
+      > div {
+        @include grid-column(8, $base-layout-grid);
+      }
+    }
+    &__search {
+      @include grid-column(12, $base-layout-grid);
+      .form__search {
+        margin:0 0 32px 0;
+      }
+    }
+  }
+
+  .locations {
+    margin: 0;
+    padding: 32px;
+    width: calc(100% - 64px);
+    height: calc(100vh - 64px);
+    overflow: scroll;
+    &__intro {
+      @include grid-column(12, $base-layout-grid);
+
+      border-bottom: dashed 1px rgba(0,0,0,0.1);
+      margin: 0 0 32px;
+      padding: 0 0 32px;
+
+      > div {
+        @include grid-column(8, $base-layout-grid);
+      }
+    }
+    &__search {
+      @include grid-column(12, $base-layout-grid);
+
+      .form__search {
+        margin:0 0 32px 0;
+      }
+    }
+  }
+
+  .edit-user {
+    @include grid-column(12, $base-layout-grid);
+    > div {
+      @include grid-column(6, $base-layout-grid);
+    }
+  }
 }

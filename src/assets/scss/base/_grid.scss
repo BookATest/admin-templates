@@ -38,4 +38,12 @@ $base-layout-grid--tablet-up: (
   @include grid-media($base-layout-grid--tablet-up) {
     @include grid-column(10);
   }
+
+  &--no-sidebar {
+    @include grid-column(12, $base-layout-grid);
+
+    @include grid-media($base-layout-grid--tablet-up) {
+      @include grid-column(12);
+    }
+  }
 }

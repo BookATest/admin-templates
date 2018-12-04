@@ -2,6 +2,107 @@
 // 6.1 Form Inputs
 
 .form {
+
+  &--login {
+
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    h2 {
+      @include dosisSemiBold();
+      font-size:24px;
+      line-height: 24px;
+      margin:0 0 32px 0;
+    }
+
+    p {
+      @include dosisSemiBold();
+      font-size:14px;
+      line-height: 18px;
+      margin:0 0 32px 0;
+    }
+
+    label {
+      width:70px;
+      margin: 0 32px 0 0 !important;
+      text-align: left;
+    }
+
+    .form__text {
+      margin:0 0 32px 0 !important;
+    }
+  }
+
+  &--my-profile {
+    .form__text {
+      margin:0 0 24px 0 !important;
+    }
+    label {
+      width:70px;
+      margin: 0 32px 0 0 !important;
+      text-align: left;
+    }
+
+  }
+
+  &--privacy-policy {
+    .form__checkbox {
+      display: inline-block;
+      margin-right: 40px;
+
+      label {
+        @include dosisSemiBold();
+        font-size: 14px;
+        line-height: 14px;
+
+        &:after {
+          line-height: 18px;
+        }
+      }
+    }
+  }
+
+  &__code {
+    margin:0 0 32px 0 !important;
+
+    label {
+      display: block;
+      width:100%;
+      height:auto;
+      @include innerPageTitle();
+      text-align: center;
+      margin:0 0 32px 0 !important;
+    }
+
+    > div {
+      position: relative;
+      display: inline-block;
+      @include border-top-radius(8px);
+      @include border-bottom-radius(8px);
+      width: 30px;
+      height: 40px;
+      margin:0 4px;
+      padding:0;
+      background-color: $white;
+      border: solid 1px $mineShaft50;
+      vertical-align: middle;
+
+      input {
+        background: transparent;
+        text-align: center;
+        border: none;
+        width: 30px;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
   // 6.1.1 Drop Down
   &__drop-down {
     label {

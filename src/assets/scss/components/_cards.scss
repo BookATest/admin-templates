@@ -44,3 +44,47 @@
     background-color: $mineShaft10;
   }
 }
+
+
+.card {
+
+  &--help {
+    @include border-top-radius(6px);
+    @include border-bottom-radius(6px);
+    background-color:$mineShaft10;
+
+    width: calc(100% - 48px) !important;
+    margin:0 0 32px 0;
+    padding:24px;
+
+    .help__icon {
+      width: 25px;
+      height: auto;
+      margin: 0 24px 0 0;
+      padding: 0;
+      display: inline-block;
+      font-size: 25px;
+    }
+    .help__content {
+      width: calc((100% - 25px) - 28px);
+      height: auto;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+
+      p {
+
+        @include dosisSemiBold();
+        font-size: 12px;
+        line-height: 15px;
+        
+        margin: 0;
+        padding: 0;
+
+
+      }
+    }
+
+  }
+
+}

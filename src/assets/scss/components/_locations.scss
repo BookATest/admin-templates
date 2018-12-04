@@ -1,0 +1,9 @@
+.locations {
+  p {
+    @include dosisSemiBold();
+    font-size: 12px;
+    line-height: 15px;
+    margin:0;
+    padding:0;
+  }
+}

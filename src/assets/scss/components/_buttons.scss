@@ -211,4 +211,136 @@
       }
     }
   }
+
+  &__other {
+    position: relative;
+    background-color: $apricot;
+    float: left;
+    width:calc((100% / 3) - 32px);
+    height:auto;
+    margin: 16px;
+
+    &:before {
+      content: '';
+      padding-top:80%;
+      display: block;
+    }
+
+    span {
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+
+      @include largeTitle();
+    }
+
+    &--alt {
+      background-color: $grandis;
+    }
+  }
+
+  &--upload {
+    background-color: $blueViolet10;
+    border: solid 1px $blueViolet;
+    color: $blueViolet;
+    width:150px;
+    height:160px;
+    text-align: center;
+
+    img {
+      display: block;
+      margin:0 auto 16px auto;
+      width: 100px;
+      height: 100px;
+    }
+
+    span {
+      @include innerPageHeader();
+    }
+  }
+
+  &--user, &--location {
+    position: relative;
+    border: solid 1px $blueViolet;
+    color: $mineShaft;
+    width: calc(50% - 10px);
+    height:93px;
+    margin:0 16px 8px 0;
+    padding:24px;
+    text-align: left;
+
+    &:hover {
+      background-color: $blueViolet10;
+    }
+
+    &:nth-child(odd) {
+      margin-right:0;
+    }
+
+    img {
+      position: absolute;
+      top:24px;
+      left:24px;
+      width:47px;
+      height:47px;
+
+    }
+    span {
+      &.name {
+        @include innerPageHeader();
+        display: block;
+        margin-left:62px;
+      }
+      &.role {
+        @include dosisSemiBold();
+        font-size: 14px;
+        line-height: 17px;
+        display: block;
+        margin-left:62px;
+      }
+      &.edit {
+        position: absolute;
+        bottom:0;
+        right:0;
+        padding:8px 16px;
+        background-color: $blueViolet10;
+        border: solid 1px $blueViolet;
+        border-bottom:0;
+        border-right:0;
+        color: $mineShaft;
+
+        i {
+          color: $blueViolet;
+          font-size:14px;
+        }
+      }
+    }
+
+    &--no-avatar {
+      span {
+        &.name, &.role {
+          margin-left:0 !important;
+        }
+      }
+    }
+
+    &--edit {
+      border: solid 1px $blueViolet;
+    }
+
+    &--add {
+      border: solid 1px $mineShaft;
+      text-align: right;
+
+      &:hover {
+        background-color: $black10;
+      }
+
+      i {
+        color: $mineShaft;
+        font-size:14px;
+      }
+    }
+  }
 }

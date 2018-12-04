@@ -45,52 +45,43 @@
     <div class="base-layout__main">
       <div class="main">
 
-        <!-- Pre Triage Questions -->
-        <div class="pre-triage-questions">
+        <!-- Configuration -->
+        <div class="configuration">
 
-          <div class="pre-triage-questions__intro">
-            <div>
-              <h2>Pre triage questions <i class="icon icon--edit"></i></h2>
+          <div class="configuration__intro">
+            <div class="">
+              <h2>Notifications</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum sem quis aliquet laoreet. Duis blandit luctus nulla vel ullamcorper. Suspendisse eu efficitur justo. Quisque mollis in erat sit amet rhoncus.</p>
             </div>
           </div>
-          <div class="pre-triage-questions__question">
-            <div class="">
-              <form class="form form--pre-triage-questions">
-                <div class="form__text">
-                  <label for="name"><span>Question</span></label>
-                  <div>
-                      <input type="text" id="name" name="name" value="What is your gender?">
-                  </div>
-                </div>
-                <div class="form__text">
-                  <label><span>Response</span></label>
-                  <label class="button button__radio"><input checked="checked" name="group" type="radio"><span>Yes / No<span></span></span></label>
-                  <label class="button button__radio"><input name="group" type="radio"><span>Drop down</span></label>
-                </div>
-              </form>
-            </div>
 
+          <div class="configuration__options">
             <div class="">
-
-              <div class="card card--warning">
-                <div class="warning__action">
-                  <button class="button button__secondary button__secondary--a"><span>Delete question</span></button>
-                </div>
-                <div class="warning__icon">
-                  <i class="icon icon--warning"></i>
-                </div>
-                <div class="warning__content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque dictum</p>
-                </div>
+              <div class="button button__amend button__amend--edit">
+                <input type="text" id="one" name="one" value="Pick up milk" class="button__amend__input"></input>
+                <button class="button__amend__edit"><span>Edit</span><i class="icon icon--edit"></i></button>
               </div>
-
+              <div class="button button__amend button__amend--edit">
+                  <input type="text" id="two" name="two" value="See GP" class="button__amend__input"></input>
+                <button class="button__amend__edit"><span>Edit</span><i class="icon icon--edit"></i></button>
+              </div>
+              <div class="button button__amend button__amend--add">
+                <button class="button__amend__add"><span>Add</span><i class="icon icon--pluscircle"></i></button>
+              </div>
+              <!--
+                <div class="button button__amend button__amend--add button__amend--add--inactive">
+                  <button class="button__amend__add"><span>Add</span><i class="icon icon--pluscircle"></i></button>
+                </div>
+              -->
             </div>
-
           </div>
 
-          <div class="pre-triage-questions__action">
-            <button class="button button__primary button__primary--b"><span>Save</span></button>
+          <div class="configuration__feedback">
+            <h2>Follow-up feedback?</h2>
+            <label class="button button__radio"><input checked="checked" name="group" type="radio"><span>Enable<span></label><label class="button button__radio"><input name="group" type="radio"><span>Disable</span></label>
           </div>
+
+
         </div>
 
       </div>

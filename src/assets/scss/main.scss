@@ -21,11 +21,12 @@
 @import "components/navigation";
 @import "components/appointments";
 
-@import "components/my-profile"; // My Settings > My Profile
-@import "components/calendar"; // My Settings > Calendar
-@import "components/notifications"; // My Settings > Notifications
-@import "components/users"; // My Settings > Users
-@import "components/edit-user"; // My Settings > Edit User
-@import "components/locations"; // My Settings > Locations
-@import "components/location-edit"; // My Settings > Location Edit
-@import "components/pre-triage-questions"; // My Settings > Pre Triage Questions
+@import "components/my-profile"; // Settings > My Profile
+@import "components/calendar"; // Settings > Calendar
+@import "components/notifications"; // Settings > Notifications
+@import "components/users"; // Settings > Users
+@import "components/edit-user"; // Settings > Edit User
+@import "components/locations"; // Settings > Locations
+@import "components/location-edit"; // Settings > Location Edit
+@import "components/pre-triage-questions"; // Settings > Pre Triage Questions
+@import "components/configuration"; // Settings > Configuration

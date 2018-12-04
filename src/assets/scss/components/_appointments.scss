@@ -405,7 +405,8 @@
             }
           }
 
-          .available, .add-availability {
+          .add-availability,
+          .available {
             &--date {
               display: block;
               margin: 0 0 16px;
@@ -644,7 +645,7 @@
           cursor: not-allowed;
         }
       }
-      
+
       &--booked-cw-initials-repeat {
         background-color: $cornflowerBlue;
         box-shadow: inset 0 0 0 1px $cornflowerBlue;

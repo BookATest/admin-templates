@@ -6,7 +6,7 @@
   margin: 0;
   padding: 32px 16px 24px;
   height: calc(100% - 56px);
-  overflow:scroll;
+  overflow: scroll;
 
   ul {
     width: 100%;
@@ -24,10 +24,12 @@
         @include innerPageHeader();
         color: $wildSand;
 
-        &:focus, &:hover {
+        &:focus,
+        &:hover {
           i {
             opacity: 1.0 !important;
           }
+
           span {
             opacity: 1.0 !important;
           }
@@ -82,6 +84,7 @@
             i {
               opacity: 0.5;
             }
+
             span {
               opacity: 0.5;
             }
@@ -97,6 +100,7 @@
                 i {
                   opacity: 0.5;
                 }
+
                 span {
                   opacity: 0.5;
                 }

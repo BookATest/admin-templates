@@ -4,7 +4,6 @@
 .card-frame {
   // @include border-top-radius(6px);
   // @include border-bottom-radius(6px);
-
   // 7.1.1 Card Frame - Popout
   &--pop-out {
     background-color: $white;
@@ -45,17 +44,56 @@
   }
 }
 
-
 .card {
+  &--warning {
+    @include border-top-radius(6px);
+    @include border-bottom-radius(6px);
+    background-color: $apricot50;
+    width: calc(100% - 48px);
+    max-width: calc(264px - 48px) !important;
+    margin: 0 0 32px;
+    padding: 24px;
 
+    .warning__action {
+      text-align: center;
+      margin:0 0 24px 0;
+    }
+    .warning__icon {
+      width: 25px;
+      height: auto;
+      margin: 0 24px 0 0;
+      padding: 0;
+      display: inline-block;
+      font-size: 25px;
+      color: $apricot;
+      vertical-align: top;
+    }
+
+    .warning__content {
+      width: calc((100% - 25px) - 28px);
+      height: auto;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+
+      vertical-align: top;
+
+      p {
+        @include dosisSemiBold();
+        font-size: 12px;
+        line-height: 15px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
   &--help {
     @include border-top-radius(6px);
     @include border-bottom-radius(6px);
-    background-color:$mineShaft10;
-
+    background-color: $mineShaft10;
     width: calc(100% - 48px) !important;
-    margin:0 0 32px 0;
-    padding:24px;
+    margin: 0 0 32px;
+    padding: 24px;
 
     .help__icon {
       width: 25px;
@@ -65,6 +103,7 @@
       display: inline-block;
       font-size: 25px;
     }
+
     .help__content {
       width: calc((100% - 25px) - 28px);
       height: auto;
@@ -73,18 +112,12 @@
       display: inline-block;
 
       p {
-
         @include dosisSemiBold();
         font-size: 12px;
         line-height: 15px;
-        
         margin: 0;
         padding: 0;
-
-
       }
     }
-
   }
-
 }

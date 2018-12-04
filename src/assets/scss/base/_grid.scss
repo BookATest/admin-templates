@@ -2,12 +2,10 @@
 // 1.1 Base 8px Grid System
 // 8px, 16px, 24px, 32px, 40px, 48px, 56px, 64px, 72px, 80px, 88px, 96px, 104px, 112px
 /* https://neat.bourbon.io/docs/latest/ */
-
 $base-layout-grid: (
   columns: 12,
   gutter: 0,
 );
-
 $base-layout-grid--tablet-up: (
   columns: 12,
   gutter: 0,
@@ -24,24 +22,20 @@ $base-layout-grid--tablet-up: (
 
 .base-layout__sidebar {
   @include grid-column(12, $base-layout-grid);
-
   @include grid-media($base-layout-grid--tablet-up) {
     @include grid-column(2);
   }
 
-  width:162px;
 }
 
 .base-layout__main {
   @include grid-column(12, $base-layout-grid);
-
   @include grid-media($base-layout-grid--tablet-up) {
     @include grid-column(10);
   }
 
   &--no-sidebar {
     @include grid-column(12, $base-layout-grid);
-
     @include grid-media($base-layout-grid--tablet-up) {
       @include grid-column(12);
     }

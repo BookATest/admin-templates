@@ -47,7 +47,6 @@
 
     &__my-calendar-feed {
       @include grid-column(12, $base-layout-grid);
-
       border-bottom: dashed 1px rgba(0,0,0,0.1);
       margin: 0 0 32px;
       padding: 0 0 32px;
@@ -80,9 +79,9 @@
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
     overflow: scroll;
+
     &__intro {
       @include grid-column(12, $base-layout-grid);
-
       border-bottom: dashed 1px rgba(0,0,0,0.1);
       margin: 0 0 32px;
       padding: 0 0 32px;
@@ -91,10 +90,12 @@
         @include grid-column(8, $base-layout-grid);
       }
     }
+
     &__search {
       @include grid-column(12, $base-layout-grid);
+
       .form__search {
-        margin:0 0 32px 0;
+        margin: 0 0 32px;
       }
     }
   }
@@ -105,9 +106,9 @@
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
     overflow: scroll;
+
     &__intro {
       @include grid-column(12, $base-layout-grid);
-
       border-bottom: dashed 1px rgba(0,0,0,0.1);
       margin: 0 0 32px;
       padding: 0 0 32px;
@@ -116,19 +117,52 @@
         @include grid-column(8, $base-layout-grid);
       }
     }
+
     &__search {
       @include grid-column(12, $base-layout-grid);
 
       .form__search {
-        margin:0 0 32px 0;
+        margin: 0 0 32px;
       }
     }
   }
 
   .edit-user {
-    @include grid-column(12, $base-layout-grid);
-    > div {
-      @include grid-column(6, $base-layout-grid);
+    margin: 0;
+    padding: 32px;
+    width: calc(100% - 64px);
+    height: calc(100vh - 64px);
+    overflow: scroll;
+
+    &__intro {
+      @include grid-column(12, $base-layout-grid);
+    }
+    &__details {
+      @include grid-column(12, $base-layout-grid);
+
+      > div {
+        @include grid-column(6, $base-layout-grid);
+      }
+
+      border-bottom: dashed 1px rgba(0,0,0,0.1);
+      margin: 0 0 32px;
+      padding: 0 0 8px;
+    }
+
+    &__notification {
+      @include grid-column(12, $base-layout-grid);
+
+      > div {
+        @include grid-column(6, $base-layout-grid);
+      }
+
+      border-bottom: dashed 1px rgba(0,0,0,0.1);
+      margin: 0 0 32px;
+      padding: 0 0 32px;
+    }
+
+    &__action {
+      @include grid-column(12, $base-layout-grid);
     }
   }
 }

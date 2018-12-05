@@ -258,6 +258,7 @@
         &__text {
           @include grid-column(6, $base-layout-grid);
         }
+
         &__variables {
           @include grid-column(6, $base-layout-grid);
         }
@@ -299,11 +300,37 @@
           @include grid-column(3, $base-layout-grid);
           text-align: left;
         }
+
         &:nth-child(2) {
           @include grid-column(9, $base-layout-grid);
           text-align: right;
         }
       }
+    }
+
+    &__action {
+      @include grid-column(12, $base-layout-grid);
+      border-bottom: dashed 1px rgba(0,0,0,0.1);
+      margin: 0 0 32px;
+      padding: 0 0 32px;
+    }
+
+    &__data {
+      @include grid-column(12, $base-layout-grid);
+      border-bottom: dashed 1px rgba(0,0,0,0.1);
+      margin: 0;
+      padding: 0 0 32px;
+
+      > div {
+        &:nth-child(1) {
+          @include grid-column(6, $base-layout-grid);
+        }
+        &:nth-child(2) {
+          @include grid-column(6, $base-layout-grid);
+          text-align: right;
+        }
+      }
+
     }
 
     &__table {

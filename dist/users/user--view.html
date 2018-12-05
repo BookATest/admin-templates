@@ -21,7 +21,7 @@
           <div class="main">
             <div class="main__title">
               <h1>Yorkshire MESMAC</h1>
-              <h2>Service Users</h2>
+              <h2>User View</h2>
             </div>
             <div class="main__logout">
               <button class="button button__logout" onclick="location.href='../login/login--one.html'">
@@ -69,137 +69,59 @@
         <!-- Service Users -->
         <div class="service-users">
 
-          <!-- Filter -->
-          <div class="service-users__filter">
-            <form class="form">
-              <div>
-                <div class="form__search">
-                <label for="search">Search</label>
-                <div>
-                  <input type="text" id="search" name="search"></input>
-                  <button><i class="icon icon--arrowright"></i></button>
+          <!-- Action-->
+          <div class="service-users__action">
+            <button class="button button__primary button__primary--b" onclick="location.href='../users/users.html'"><span>Back</span></button>
+          </div>
+
+          <!-- Data -->
+          <div class="service-users__data">
+            <div>
+
+              <ul>
+                <li><span>Unique ID</span><span>87209842</span></li>
+                <li><span>Name</span><span>Robert Kirk</span></li>
+                <li><span>Phone</span><span>-</span></li>
+                <li><span>Email</span><span>robert.kirk@gmail.com</span></li>
+              </ul>
+
+              <form>
+                <div class="form__text">
+                  <label><span>Send feedback submission<br/>notification emails?</span></label>
+                  <label class="button button__radio button__radio"><input name="group" type="radio" disabled><span>phone<span></span></span></label>
+                  <label class="button button__radio button__radio"><input checked="checked" name="group" type="radio" disabled><span>email</span></label>
                 </div>
+              </form>
+            </div>
+            <div>
+              <div class="card card__stats--patient">
+                <span><strong>10%</strong>DNA rate</span>
               </div>
-              </div>
-              <div>
-                <div class="form__drop-down">
-                  <label for="dropdown">Filter by</label>
-                  <div>
-                    <select id="dropdown" name="dropdown">
-                      <option>Unique ID</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                      <option>Option 4</option>
-                      <option>Option 5</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form__drop-down">
-                  <div>
-                    <select id="dropdown" name="dropdown">
-                      <option>Name</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                      <option>Option 4</option>
-                      <option>Option 5</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form__drop-down">
-                  <div>
-                    <select id="dropdown" name="dropdown">
-                      <option>Last Appointment</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                      <option>Option 4</option>
-                      <option>Option 5</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </form>
+            </div>
           </div>
 
           <!-- Table -->
           <div class="service-users__table">
 
-            <table class="table table--4col" cellpadding="16">
+            <table class="table table--3col" cellpadding="16">
               <tr>
-                <th><span>Unique ID</span></th>
-                <th><span>Name</span></th>
-                <th><span>Last appointment</span></th>
-                <th><span>&nbsp;</span></th>
+                <th><span>Date</span></th>
+                <th><span>Location</span></th>
+                <th><span>Feedback</span></th>
               </tr>
               <tr>
-                <td><span>87209842</span></td>
-                <td><span>Robert Kirk</span></td>
                 <td><span>18/02/18</span></td>
+                <td><span>Leeds</span></td>
                 <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
               </tr>
               <tr>
-                <td><span>87209842</span></td>
-                <td><span>Robert Kirk</span></td>
                 <td><span>18/02/18</span></td>
+                <td><span>Leeds</span></td>
                 <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
               </tr>
               <tr>
-                <td><span>87209842</span></td>
-                <td><span>Robert Kirk</span></td>
                 <td><span>18/02/18</span></td>
-                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
-              </tr>
-              <tr>
-                <td><span>87209842</span></td>
-                <td><span>Robert Kirk</span></td>
-                <td><span>18/02/18</span></td>
-                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
-              </tr>
-              <tr>
-                <td><span>87209842</span></td>
-                <td><span>Robert Kirk</span></td>
-                <td><span>18/02/18</span></td>
-                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
-              </tr>
-              <tr>
-                <td><span>87209842</span></td>
-                <td><span>Robert Kirk</span></td>
-                <td><span>18/02/18</span></td>
-                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
-              </tr>
-              <tr>
-                <td><span>87209842</span></td>
-                <td><span>Robert Kirk</span></td>
-                <td><span>18/02/18</span></td>
-                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
-              </tr>
-              <tr>
-                <td><span>87209842</span></td>
-                <td><span>Robert Kirk</span></td>
-                <td><span>18/02/18</span></td>
-                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
-              </tr>
-              <tr>
-                <td><span>87209842</span></td>
-                <td><span>Robert Kirk</span></td>
-                <td><span>18/02/18</span></td>
-                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
-              </tr>
-              <tr>
-                <td><span>87209842</span></td>
-                <td><span>Robert Kirk</span></td>
-                <td><span>18/02/18</span></td>
-                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
-              </tr>
-              <tr>
-                <td><span>87209842</span></td>
-                <td><span>Robert Kirk</span></td>
-                <td><span>18/02/18</span></td>
-                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
-              </tr>
-              <tr>
-                <td><span>87209842</span></td>
-                <td><span>Robert Kirk</span></td>
-                <td><span>18/02/18</span></td>
+                <td><span>Bradford</span></td>
                 <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
               </tr>
             </table>

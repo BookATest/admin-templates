@@ -247,6 +247,27 @@
     &__feedback {
       @include grid-column(12, $base-layout-grid);
     }
+
+    &__custom {
+      @include grid-column(12, $base-layout-grid);
+      border-bottom: dashed 1px rgba(0,0,0,0.1);
+      margin: 0 0 32px;
+      padding: 0 0 32px;
+
+      .custom {
+        &__text {
+          @include grid-column(6, $base-layout-grid);
+        }
+        &__variables {
+          @include grid-column(6, $base-layout-grid);
+        }
+      }
+    }
+
+    &__action {
+      @include grid-column(12, $base-layout-grid);
+
+    }
   }
 
   .branding {

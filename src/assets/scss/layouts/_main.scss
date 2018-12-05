@@ -266,7 +266,6 @@
 
     &__action {
       @include grid-column(12, $base-layout-grid);
-
     }
   }
 
@@ -279,6 +278,36 @@
 
     > div {
       @include grid-column(6, $base-layout-grid);
+    }
+  }
+
+  .service-users {
+    margin: 0;
+    padding: 32px;
+    width: calc(100% - 64px);
+    height: calc(100vh - 64px);
+    overflow: scroll;
+
+    &__filter {
+      @include grid-column(12, $base-layout-grid);
+      border-bottom: dashed 1px rgba(0,0,0,0.1);
+      margin: 0;
+      padding: 0 0 32px;
+
+      .form > div {
+        &:nth-child(1) {
+          @include grid-column(3, $base-layout-grid);
+          text-align: left;
+        }
+        &:nth-child(2) {
+          @include grid-column(9, $base-layout-grid);
+          text-align: right;
+        }
+      }
+    }
+
+    &__table {
+      @include grid-column(12, $base-layout-grid);
     }
   }
 }

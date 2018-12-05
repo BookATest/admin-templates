@@ -37,6 +37,10 @@
   &--my-profile {
     .form__text {
       margin: 0 0 24px 0 !important;
+
+      > div {
+        min-width: 204px;
+      }
     }
 
     label {

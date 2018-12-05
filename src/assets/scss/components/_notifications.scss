@@ -1,4 +1,5 @@
 .notifications {
+  background-color: $wildSand;
   h2 {
     @include innerPageTitle();
     margin:40px 0 24px 0;

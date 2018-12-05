@@ -69,3 +69,14 @@
   font-size: 28px;
   line-height: 36px;
 }
+
+@mixin xxLargeTitle() {
+  @include dosisSemiBold();
+  font-size: 22px;
+  line-height: 28px;
+}
+@mixin xxxLargeTitle() {
+  @include dosisSemiBold();
+  font-size: 32px;
+  line-height: 41px;
+}

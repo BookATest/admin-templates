@@ -1,4 +1,6 @@
 .my-profile {
+  background-color: $wildSand;
+  
   &__privacy-settings {
     h2 {
       @include innerPageTitle();

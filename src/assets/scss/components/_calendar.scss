@@ -1,4 +1,6 @@
 .settings-calendar {
+  background-color: $wildSand;
+  
   h2 {
     @include innerPageTitle();
     margin: 0 0 24px;

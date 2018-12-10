@@ -7,7 +7,7 @@ var autoprefixer    = require('gulp-autoprefixer');
 var babel           = require('gulp-babel');
 var concat          = require('gulp-concat');
 
-gulp.task('serve', ['sass', 'js', 'fonts', 'html'], function() {
+gulp.task('serve', ['sass', 'js', 'fonts', 'images', 'html'], function() {
     browserSync.init({
         server: './dist'
         //proxy: 'localhost:8080'
@@ -15,6 +15,7 @@ gulp.task('serve', ['sass', 'js', 'fonts', 'html'], function() {
     gulp.watch('src/assets/scss/**/*.scss', ['sass']);
     gulp.watch('src/assets/js/**/*.js', ['js']);
     gulp.watch('src/assets/fonts/**/*', ['fonts']);
+    gulp.watch('src/assets/images/**/*', ['images']);
     gulp.watch('src/**/*.html', ['html']).on('change', browserSync.reload);
 });
 
@@ -45,6 +46,12 @@ gulp.task('js', function () {
 gulp.task('fonts', function () {
   return gulp.src('src/assets/fonts/**/*')
       .pipe(gulp.dest('dist/assets/fonts'))
+      .pipe(browserSync.stream());
+});
+
+gulp.task('images', function () {
+  return gulp.src('src/assets/images/**/*')
+      .pipe(gulp.dest('dist/assets/images'))
       .pipe(browserSync.stream());
 });
 

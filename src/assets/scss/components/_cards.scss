@@ -45,6 +45,94 @@
 }
 
 .card {
+  &__stats {
+    &--results {
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+
+      &:nth-child(odd) {
+        > div {
+          background-color: $cornflowerBlue80;
+        }
+      }
+
+      &:nth-child(even) {
+        > div {
+          background-color: $blueViolet50;
+        }
+      }
+
+      > div {
+        position: relative;
+        @include border-top-radius(125px);
+        @include border-bottom-radius(125px);
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        text-align: left;
+        margin: 0 0 16px;
+
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: $white;
+          font-size: 20px;
+          line-height: 20px;
+          margin: 0;
+          padding: 18px;
+          @include openSansRegular();
+        }
+      }
+
+      span {
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0 0 32px;
+        @include innerPageTitle();
+      }
+    }
+
+    &--patient {
+      position: relative;
+      @include border-top-radius(125px);
+      @include border-bottom-radius(125px);
+      width: 125px;
+      height: 125px;
+      display: inline-block;
+      background-color: $blueViolet50;
+      text-align: left;
+      margin: 0 32px 32px;
+
+      span {
+        width: calc(100% - 36px);
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 18px;
+        @include openSansRegular();
+
+        strong {
+          display: block;
+          font-size: 24px;
+          line-height: 24px;
+          margin: 0 0 8px;
+          padding: 0;
+          @include openSansRegular();
+        }
+      }
+    }
+  }
+
   &--warning {
     @include border-top-radius(6px);
     @include border-bottom-radius(6px);
@@ -56,8 +144,9 @@
 
     .warning__action {
       text-align: center;
-      margin:0 0 24px 0;
+      margin: 0 0 24px;
     }
+
     .warning__icon {
       width: 25px;
       height: auto;
@@ -75,7 +164,6 @@
       margin: 0;
       padding: 0;
       display: inline-block;
-
       vertical-align: top;
 
       p {
@@ -87,6 +175,7 @@
       }
     }
   }
+
   &--help {
     @include border-top-radius(6px);
     @include border-bottom-radius(6px);

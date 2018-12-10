@@ -303,6 +303,74 @@
     }
   }
 
+  &__date {
+    display: inline-block;
+
+    button {
+      position: relative;
+      display: inline-block;
+      float: right;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      width: auto;
+      min-width: 42px;
+      height: 42px;
+      background-color: $mineShaft10;
+      font-size: 16px;
+      border-left: 0;
+      vertical-align: middle;
+      margin:0 0 0 8px;
+      cursor: pointer;
+    }
+
+    > div {
+      position: relative;
+      display: inline-block;
+      @include border-top-radius(8px);
+      @include border-bottom-radius(8px);
+      width: auto;
+      min-width: 160px;
+      height: 40px;
+      background-color: $white;
+      border: solid 1px $mineShaft50;
+      vertical-align: middle;
+
+      input {
+        background-color: transparent;
+        border: none;
+        width: calc(100% - 32px);
+        height: 40px;
+        margin: 0;
+        padding: 0 16px;
+      }
+
+      &:focus {
+        border: solid 1px $blueViolet;
+      }
+
+      &:hover {
+        border: solid 1px $blueViolet50;
+      }
+    }
+
+    &--disabled {
+      > div {
+        color: $mineShaft40;
+        border: solid 1px $mineShaft40;
+
+        input {
+          cursor: not-allowed;
+        }
+
+        &:hover {
+          border: solid 1px $mineShaft40;
+        }
+      }
+    }
+  }
+
   &__search {
     label {
       @include innerPageHeader();

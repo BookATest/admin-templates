@@ -15,13 +15,13 @@
       <div class="header">
         <!-- Header -->
         <div class="header__sidebar">
-          <a href="/"><img src="../assets/images/logos/logo-yorkshire-masmac.png" alt="Book a Test"></a>
+          <a href="../dashboard/dashboard.html"><img src="../assets/images/logos/logo-yorkshire-masmac.png" alt="Book a Test"></a>
         </div>
         <div class="header__main">
           <div class="main">
             <div class="main__title">
               <h1>Yorkshire MESMAC</h1>
-              <h2>Appointments</h2>
+              <h2>Dashboard</h2>
             </div>
             <div class="main__logout">
               <button class="button button__logout" onclick="location.href='../login/login--one.html'">
@@ -58,13 +58,104 @@
               <li><a href="../users/users.html" title=""><i class="icon icon--users"></i><span>service users</span></a></li>
             </ul>
           </nav>
-          <a href="" class="help"><span>Help</span> <i class="icon icon--help"></i></a>
+          <a href="../help/help.html" class="help"><span>Help</span> <i class="icon icon--help"></i></a>
         </div>
       </div>
     </div>
 
     <div class="base-layout__main">
-      Main
+      <div class="main">
+
+        <!-- Dashboard -->
+        <div class="dashboard">
+
+          <div class="dashboard__upcoming-appointments">
+
+            <div class="upcoming-appointments">
+
+              <div class="upcoming-appointments__title">
+                <h2>Upcoming appointments</h2>
+              </div>
+
+              <div class="upcoming-appointments__cards">
+
+                <button class="button button__appointment button__appointment--today">
+                  <span class="appointment__date">Today</span>
+                  <span class="appointment__time">9:30 am</span>
+                  <span class="appointment__name">Robert Kirk</span>
+                  <span class="appointment__icon"><i class="icon icon--users"></i></span>
+                </button>
+
+                <button class="button button__appointment">
+                  <span class="appointment__date">Tomorrow</span>
+                  <span class="appointment__time">9:30 am</span>
+                  <span class="appointment__name">Robert Kirk</span>
+                  <span class="appointment__icon"><i class="icon icon--users"></i></span>
+                </button>
+
+                <button class="button button__appointment button__appointment--today">
+                  <span class="appointment__date">Today</span>
+                  <span class="appointment__time">9:30 am</span>
+                  <span class="appointment__name">Robert Kirk</span>
+                  <span class="appointment__icon"><i class="icon icon--users"></i></span>
+                </button>
+
+                <button class="button button__appointment">
+                  <span class="appointment__date">Tomorrow</span>
+                  <span class="appointment__time">9:30 am</span>
+                  <span class="appointment__name">Robert Kirk</span>
+                  <span class="appointment__icon"><i class="icon icon--users"></i></span>
+                </button>
+
+                <button class="button button__appointment">
+                  <span class="appointment__date">Tomorrow</span>
+                  <span class="appointment__time">9:30 am</span>
+                  <span class="appointment__name">Robert Kirk</span>
+                  <span class="appointment__icon"><i class="icon icon--users"></i></span>
+                </button>
+
+                <button class="button button__appointment">
+                  <span class="appointment__date">Tomorrow</span>
+                  <span class="appointment__time">9:30 am</span>
+                  <span class="appointment__name">Robert Kirk</span>
+                  <span class="appointment__icon"><i class="icon icon--users"></i></span>
+                </button>
+
+              </div>
+
+              <div class="upcoming-appointments__quick-links">
+                <h2>Quick links</h2>
+
+                <button class="button button__secondary button__secondary--b"><span>Ad-hoc appointments</span></button>
+                <button class="button button__secondary button__secondary--b"><span>Manage regular<br/>appointments slots</span></button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="dashboard__results">
+            <div class="card card__stats--results">
+              <div class=""><span>12</span></div>
+              <span>Appointments<br/>this week</span>
+            </div>
+            <div class="card card__stats--results">
+              <div class=""><span>62%</span></div>
+              <span>Attendance<br/>rate</span>
+            </div>
+            <div class="card card__stats--results">
+              <div class=""><span>30%</span></div>
+              <span>Attendees provided<br/>feedback</span>
+            </div>
+            <div class="card card__stats--results">
+              <div class=""><span>28%</span></div>
+              <span>DNA rate</span>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
     </div>
 
   </div>

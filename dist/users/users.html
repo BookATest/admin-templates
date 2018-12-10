@@ -11,8 +11,29 @@
 
   <div class="base-layout">
 
-    <div class="base-layout__header">
-      Header
+    <div class="base-layout__header base-layout__header--default">
+      <div class="header">
+        <!-- Header -->
+        <div class="header__sidebar">
+          <a href="../dashboard/dashboard.html"><img src="../assets/images/logos/logo-yorkshire-masmac.png" alt="Book a Test"></a>
+        </div>
+        <div class="header__main">
+          <div class="main">
+            <div class="main__title">
+              <h1>Yorkshire MESMAC</h1>
+              <h2>Service Users</h2>
+            </div>
+            <div class="main__logout">
+              <button class="button button__logout" onclick="location.href='../login/login--one.html'">
+                <img src="../assets/images/avatar/face.png">
+                <span class="name">Leon MESMAC</span>
+                <span class="role">Organisation admin</span>
+                <span class="logout"><i class="icon icon--power"></i> Logout</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="base-layout__sidebar">
@@ -37,13 +58,158 @@
               <li><a href="../users/users.html" title=""><i class="icon icon--users"></i><span>service users</span></a></li>
             </ul>
           </nav>
-          <a href="" class="help"><span>Help</span> <i class="icon icon--help"></i></a>
+          <a href="../help/help.html" class="help"><span>Help</span> <i class="icon icon--help"></i></a>
         </div>
       </div>
     </div>
 
     <div class="base-layout__main">
-      Main
+      <div class="main">
+
+        <!-- Service Users -->
+        <div class="service-users">
+
+          <!-- Filter -->
+          <div class="service-users__filter">
+            <form class="form">
+              <div>
+                <div class="form__search">
+                <label for="search">Search</label>
+                <div>
+                  <input type="text" id="search" name="search"></input>
+                  <button><i class="icon icon--arrowright"></i></button>
+                </div>
+              </div>
+              </div>
+              <div>
+                <div class="form__drop-down">
+                  <label for="dropdown">Filter by</label>
+                  <div>
+                    <select id="dropdown" name="dropdown">
+                      <option>Unique ID</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                      <option>Option 5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__drop-down">
+                  <div>
+                    <select id="dropdown" name="dropdown">
+                      <option>Name</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                      <option>Option 5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__drop-down">
+                  <div>
+                    <select id="dropdown" name="dropdown">
+                      <option>Last Appointment</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                      <option>Option 5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Table -->
+          <div class="service-users__table">
+
+            <table class="table table--4col" cellpadding="16">
+              <tr>
+                <th><span>Unique ID</span></th>
+                <th><span>Name</span></th>
+                <th><span>Last appointment</span></th>
+                <th><span>&nbsp;</span></th>
+              </tr>
+              <tr>
+                <td><span>87209842</span></td>
+                <td><span>Robert Kirk</span></td>
+                <td><span>18/02/18</span></td>
+                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
+              </tr> 
+              <tr>
+                <td><span>87209842</span></td>
+                <td><span>Robert Kirk</span></td>
+                <td><span>18/02/18</span></td>
+                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
+              </tr>
+              <tr>
+                <td><span>87209842</span></td>
+                <td><span>Robert Kirk</span></td>
+                <td><span>18/02/18</span></td>
+                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
+              </tr>
+              <tr>
+                <td><span>87209842</span></td>
+                <td><span>Robert Kirk</span></td>
+                <td><span>18/02/18</span></td>
+                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
+              </tr>
+              <tr>
+                <td><span>87209842</span></td>
+                <td><span>Robert Kirk</span></td>
+                <td><span>18/02/18</span></td>
+                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
+              </tr>
+              <tr>
+                <td><span>87209842</span></td>
+                <td><span>Robert Kirk</span></td>
+                <td><span>18/02/18</span></td>
+                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
+              </tr>
+              <tr>
+                <td><span>87209842</span></td>
+                <td><span>Robert Kirk</span></td>
+                <td><span>18/02/18</span></td>
+                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
+              </tr>
+              <tr>
+                <td><span>87209842</span></td>
+                <td><span>Robert Kirk</span></td>
+                <td><span>18/02/18</span></td>
+                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
+              </tr>
+              <tr>
+                <td><span>87209842</span></td>
+                <td><span>Robert Kirk</span></td>
+                <td><span>18/02/18</span></td>
+                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
+              </tr>
+              <tr>
+                <td><span>87209842</span></td>
+                <td><span>Robert Kirk</span></td>
+                <td><span>18/02/18</span></td>
+                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
+              </tr>
+              <tr>
+                <td><span>87209842</span></td>
+                <td><span>Robert Kirk</span></td>
+                <td><span>18/02/18</span></td>
+                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
+              </tr>
+              <tr>
+                <td><span>87209842</span></td>
+                <td><span>Robert Kirk</span></td>
+                <td><span>18/02/18</span></td>
+                <td><button class="button button__primary button__primary--b" onclick="location.href='../users/user--view.html'"><span>View</span></button></td>
+              </tr>
+            </table>
+
+          </div>
+
+
+        </div>
+
+      </div>
     </div>
 
   </div>

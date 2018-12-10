@@ -11,8 +11,29 @@
 
   <div class="base-layout">
 
-    <div class="base-layout__header">
-      Header
+    <div class="base-layout__header base-layout__header--default">
+      <div class="header">
+        <!-- Header -->
+        <div class="header__sidebar">
+          <a href="/"><img src="../assets/images/logos/logo-yorkshire-masmac.png" alt="Book a Test"></a>
+        </div>
+        <div class="header__main">
+          <div class="main">
+            <div class="main__title">
+              <h1>Yorkshire MESMAC</h1>
+              <h2>Calendar</h2>
+            </div>
+            <div class="main__logout">
+              <button class="button button__logout" onclick="location.href='../login/login--one.html'">
+                <img src="../assets/images/avatar/face.png">
+                <span class="name">Leon MESMAC</span>
+                <span class="role">Organisation admin</span>
+                <span class="logout"><i class="icon icon--power"></i> Logout</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="base-layout__sidebar">
@@ -20,21 +41,21 @@
         <div class="main-navigation">
           <nav>
             <ul>
-              <li><a href="./appointments/default.html" title=""><i class="icon icon--appointments"></i><span>appointments</span></a></li>
-              <li><a href="./reporting/reporting.html" title=""><i class="icon icon--reports"></i><span>reporting</span></a></li>
+              <li><a href="../appointments/default.html" title=""><i class="icon icon--appointments"></i><span>appointments</span></a></li>
+              <li><a href="../reporting/reporting.html" title=""><i class="icon icon--reports"></i><span>reporting</span></a></li>
               <li class="submenu">
                 <a href="" title="" id="submenu"><i class="icon icon--settings"></i><span>settings</span></a>
                 <ul>
-                  <li><a href="./settings/my-profile.html" title=""><span>my profile</span></a></li>
-                  <li><a href="./settings/calendar.html" title=""><span>calendar</span></a></li>
-                  <li><a href="./settings/notifications.html" title=""><span>notifications</span></a></li>
-                  <li><a href="./settings/users.html" title=""><span>users</span></a></li>
-                <li><a href="./settings/location.html" title=""><span>location</span></a></li>
-                  <li><a href="./settings/branding.html" title=""><span>branding</span></a></li>
-                  <li><a href="./settings/configuration.html" title=""><span>configuration</span></a></li>
+                  <li><a href="./my-profile.html" title=""><span>my profile</span></a></li>
+                  <li><a href="./calendar.html" title=""><span>calendar</span></a></li>
+                  <li><a href="./notifications.html" title=""><span>notifications</span></a></li>
+                  <li><a href="./users.html" title=""><span>users</span></a></li>
+                  <li><a href="./location.html" title=""><span>locations</span></a></li>
+                  <li><a href="./branding.html" title=""><span>branding</span></a></li>
+                  <li><a href="./configuration.html" title=""><span>configuration</span></a></li>
                 </ul>
               </li>
-              <li><a href="./users/users.html" title=""><i class="icon icon--users"></i><span>service users</span></a></li>
+              <li><a href="../users/users.html" title=""><i class="icon icon--users"></i><span>service users</span></a></li>
             </ul>
           </nav>
           <a href="" class="help"><span>Help</span> <i class="icon icon--help"></i></a>
@@ -43,7 +64,33 @@
     </div>
 
     <div class="base-layout__main">
-      Main
+      <div class="main">
+
+        <!-- Calendar -->
+        <div class="settings-calendar">
+
+
+          <div class="settings-calendar__my-calendar-feed">
+            <div class="">
+              <h2>My calender feed</h2>
+              <p>Link to iCal <button class="button button__inline button__inline--focus"><span>http://cal.bookatest.hiv/L12ot3d456wi78ps90um</span><i class="icon icon--copy"></i></button></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum sem quis aliquet laoreet. Duis blandit luctus nulla vel ullamcorper. Suspendisse eu efficitur justo. Quisque mollis in erat sit amet rhoncus.</p>
+              <h2>Receive calendar invitations with confirmation emails?</h2>
+              <label class="button button__radio"><input checked="checked" name="group" type="radio"><span>Yes<span></label>
+              <label class="button button__radio"><input name="group" type="radio"><span>No</span></label>
+            </div>
+          </div>
+          <div class="settings-calendar__all-appointments-calendar">
+            <div class="">
+              <h2>All appointments calender</h2>
+              <p>link to iCal <button class="button button__inline button__inline--focus"><span>http://cal.bookatest.hiv/L12ot3d456wi78ps90um</span><i class="icon icon--copy"></i></button></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum sem quis aliquet laoreet. Duis blandit luctus nulla vel ullamcorper. Suspendisse eu efficitur justo. Quisque mollis in erat sit amet rhoncus.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </div>
 
   </div>

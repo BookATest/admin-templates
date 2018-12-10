@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="base-layout">
+
+    <div class="base-layout__header base-layout__header--default">
+      <div class="header">
+        <!-- Header -->
+        <div class="header__sidebar">
+          <a href="/"><img src="../assets/images/logos/logo-yorkshire-masmac.png" alt="Book a Test"></a>
+        </div>
+        <div class="header__main">
+          <div class="main">
+            <div class="main__title">
+              <h1>Yorkshire MESMAC</h1>
+              <h2>Settings</h2>
+            </div>
+            <div class="main__logout">
+              <button class="button button__logout" onclick="location.href='../login/login--one.html'">
+                <img src="../assets/images/avatar/face.png">
+                <span class="name">Leon MESMAC</span>
+                <span class="role">Organisation admin</span>
+                <span class="logout"><i class="icon icon--power"></i> Logout</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="base-layout__sidebar">
+      <div class="sidebar">
+        <div class="main-navigation">
+          <nav>
+            <ul>
+              <li><a href="../appointments/default.html" title=""><i class="icon icon--appointments"></i><span>appointments</span></a></li>
+              <li><a href="../reporting/reporting.html" title=""><i class="icon icon--reports"></i><span>reporting</span></a></li>
+              <li class="submenu">
+                <a href="" title="" id="submenu"><i class="icon icon--settings"></i><span>settings</span></a>
+                <ul>
+                  <li><a href="./my-profile.html" title=""><span>my profile</span></a></li>
+                  <li><a href="./calendar.html" title=""><span>calendar</span></a></li>
+                  <li><a href="./notifications.html" title=""><span>notifications</span></a></li>
+                  <li><a href="./users.html" title=""><span>users</span></a></li>
+                  <li><a href="./location.html" title=""><span>locations</span></a></li>
+                  <li><a href="./branding.html" title=""><span>branding</span></a></li>
+                  <li><a href="./configuration.html" title=""><span>configuration</span></a></li>
+                </ul>
+              </li>
+              <li><a href="../users/users.html" title=""><i class="icon icon--users"></i><span>service users</span></a></li>
+            </ul>
+          </nav>
+          <a href="" class="help"><span>Help</span> <i class="icon icon--help"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="base-layout__main">
+      <div class="main">
+
+        <div class="settings">
+          <button class="button button__other button__other" onclick="location.href = '/settings/my-profile.html';"><span>My profile</span></button>
+          <button class="button button__other button__other--alt" onclick="location.href = '/settings/calendar.html';"><span>Calender</span></button>
+          <button class="button button__other button__other" onclick="location.href = '/settings/notifications.html';"><span>Notifications</span></button>
+          <button class="button button__other button__other--alt" onclick="location.href = '/settings/users.html';"><span>Users</span></button>
+          <button class="button button__other button__other" onclick="location.href = '/settings/location.html';"><span>Locations</span></button>
+          <button class="button button__other button__other--alt" onclick="location.href = '/settings/branding.html';"><span>Branding</span></button>
+          <button class="button button__other button__other" onclick="location.href = '/settings/configuration.html';"><span>Configuration</span></button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

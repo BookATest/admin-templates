@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="base-layout">
+
+    <div class="base-layout__header base-layout__header--default">
+      <div class="header">
+        <!-- Header -->
+        <div class="header__sidebar">
+          <a href="/"><img src="../assets/images/logos/logo-yorkshire-masmac.png" alt="Book a Test"></a>
+        </div>
+        <div class="header__main">
+          <div class="main">
+            <div class="main__title">
+              <h1>Yorkshire MESMAC</h1>
+              <h2>Configuration Edit</h2>
+            </div>
+            <div class="main__logout">
+              <button class="button button__logout" onclick="location.href='../login/login--one.html'">
+                <img src="../assets/images/avatar/face.png">
+                <span class="name">Leon MESMAC</span>
+                <span class="role">Organisation admin</span>
+                <span class="logout"><i class="icon icon--power"></i> Logout</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="base-layout__sidebar">
+      <div class="sidebar">
+        <div class="main-navigation">
+          <nav>
+            <ul>
+              <li><a href="../appointments/default.html" title=""><i class="icon icon--appointments"></i><span>appointments</span></a></li>
+              <li><a href="../reporting/reporting.html" title=""><i class="icon icon--reports"></i><span>reporting</span></a></li>
+              <li class="submenu">
+                <a href="" title="" id="submenu"><i class="icon icon--settings"></i><span>settings</span></a>
+                <ul>
+                  <li><a href="./my-profile.html" title=""><span>my profile</span></a></li>
+                  <li><a href="./calendar.html" title=""><span>calendar</span></a></li>
+                  <li><a href="./notifications.html" title=""><span>notifications</span></a></li>
+                  <li><a href="./users.html" title=""><span>users</span></a></li>
+                  <li><a href="./location.html" title=""><span>locations</span></a></li>
+                  <li><a href="./branding.html" title=""><span>branding</span></a></li>
+                  <li><a href="./configuration.html" title=""><span>configuration</span></a></li>
+                </ul>
+              </li>
+              <li><a href="../users/users.html" title=""><i class="icon icon--users"></i><span>service users</span></a></li>
+            </ul>
+          </nav>
+          <a href="" class="help"><span>Help</span> <i class="icon icon--help"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="base-layout__main">
+      <div class="main">
+
+        <!-- Configuration -->
+        <div class="configuration">
+
+          <div class="configuration__intro">
+            <div class="">
+              <h2>Custom SMS <i class="icon icon--edit"></i></h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum sem quis aliquet laoreet. Duis blandit luctus nulla vel ullamcorper. Suspendisse eu efficitur justo. Quisque mollis in erat sit amet rhoncus.</p>
+            </div>
+          </div>
+
+          <div class="configuration__custom">
+            <div class="custom">
+              <div class="custom__text">
+                <form class="form form--custom-text">
+                  <div class="form__textarea form__text">
+                    <label for="directions">Custom text</label>
+                    <div>
+<textarea>Pick up milk
+
+You're appointment has been booked for {{ date }} at {{ time }}
+
+{{ bookingLink }}
+</textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="custom__variables">
+
+                <h2>Variables</h2>
+                <ul>
+                  <li><span>Date of the appoitment</span><span>{{ date }}</span></li>
+                  <li><span>Time of the appointment</span><span>{{ time }}</span></li>
+                  <li><span>Amend booking link</span><span>{{ bookingLink }}</span></li>
+                </ul>
+
+                <div class="card card--help">
+                  <div class="help__icon">
+                    <i class="icon icon--help"></i>
+                  </div>
+                  <div class="help__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque dictum</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="configuration__action">
+            <button class="button button__primary button__primary--b"><span>Save</span></button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -12,7 +12,7 @@
 /* Layouts */
 @import "layouts/header";
 @import "layouts/sidebar";
-@import "layouts/main"; 
+@import "layouts/main";
 
 /* Components */
 @import "components/buttons";
@@ -20,3 +20,14 @@
 @import "components/cards";
 @import "components/navigation";
 @import "components/appointments";
+
+@import "components/my-profile"; // Settings > My Profile
+@import "components/calendar"; // Settings > Calendar
+@import "components/notifications"; // Settings > Notifications
+@import "components/users"; // Settings > Users
+@import "components/edit-user"; // Settings > Edit User
+@import "components/locations"; // Settings > Locations
+@import "components/location-edit"; // Settings > Location Edit
+@import "components/pre-triage-questions"; // Settings > Pre Triage Questions
+@import "components/configuration"; // Settings > Configuration
+@import "components/branding"; // Settings > Branding

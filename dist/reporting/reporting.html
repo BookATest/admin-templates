@@ -15,13 +15,13 @@
       <div class="header">
         <!-- Header -->
         <div class="header__sidebar">
-          <a href="/"><img src="../assets/images/logos/logo-yorkshire-masmac.png" alt="Book a Test"></a>
+          <a href="../dashboard/dashboard.html"><img src="../assets/images/logos/logo-yorkshire-masmac.png" alt="Book a Test"></a>
         </div>
         <div class="header__main">
           <div class="main">
             <div class="main__title">
               <h1>Yorkshire MESMAC</h1>
-              <h2>Reporting</h2>
+                <h2>Reporting</h2>
             </div>
             <div class="main__logout">
               <button class="button button__logout" onclick="location.href='../login/login--one.html'">
@@ -46,13 +46,13 @@
               <li class="submenu">
                 <a href="" title="" id="submenu"><i class="icon icon--settings"></i><span>settings</span></a>
                 <ul>
-                  <li><a href="../settings/my-profile.html" title=""><span>my profile</span></a></li>
-                  <li><a href="../settings/calendar.html" title=""><span>calendar</span></a></li>
-                  <li><a href="../settings/notifications.html" title=""><span>notifications</span></a></li>
-                  <li><a href="../settings/users.html" title=""><span>users</span></a></li>
-                  <li><a href="../settings/location.html" title=""><span>locations</span></a></li>
-                  <li><a href="../settings/branding.html" title=""><span>branding</span></a></li>
-                  <li><a href="../settings/configuration.html" title=""><span>configuration</span></a></li>
+                  <li><a href="./my-profile.html" title=""><span>my profile</span></a></li>
+                  <li><a href="./calendar.html" title=""><span>calendar</span></a></li>
+                  <li><a href="./notifications.html" title=""><span>notifications</span></a></li>
+                  <li><a href="./users.html" title=""><span>users</span></a></li>
+                  <li><a href="./location.html" title=""><span>locations</span></a></li>
+                  <li><a href="./branding.html" title=""><span>branding</span></a></li>
+                  <li><a href="./configuration.html" title=""><span>configuration</span></a></li>
                 </ul>
               </li>
               <li><a href="../users/users.html" title=""><i class="icon icon--users"></i><span>service users</span></a></li>
@@ -64,7 +64,101 @@
     </div>
 
     <div class="base-layout__main">
-      Main
+      <div class="main">
+
+        <!-- Reporting -->
+        <div class="reporting">
+
+          <div class="reporting__intro">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum sem quis aliquet laoreet. Duis blandit luctus nulla vel ullamcorper. Suspendisse eu efficitur justo. Quisque mollis in erat sit amet rhoncus.</p>
+          </div>
+
+          <div class="reporting__filter">
+            <h2>Generate report</h2>
+
+            <div class="form__date">
+              <div>
+                <input type="text" id="date_one" name="date_one" placeholder="March 1st 2018">
+              </div>
+              -
+              <div>
+                  <input type="text" id="date_two" name="date_two" placeholder="March 20th 2018">
+              </div>
+              <button><i class="icon icon--arrowright"></i></button>
+            </div>
+
+          </div>
+
+          <div class="reporting__buttons">
+            <button class="button button__secondary button__secondary--b">Overview reports</button>
+            <button class="button button__secondary button__secondary--b">DNA rates by week</button>
+            <button class="button button__secondary button__secondary--b">Service user feedback</button>
+            <button class="button button__secondary button__secondary--b">Community workers summary</button>
+          </div>
+
+          <div class="reporting__options">
+            <h2>Schedule report</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <form>
+              <div class="form__drop-down">
+                <label for="dropdown"><span>Overview</span></label>
+                <div>
+                  <select id="dropdown" name="dropdown">
+                    <option>Weekly</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                    <option>Option 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__drop-down">
+                <label for="dropdown"><span>Service user feedback</span></label>
+                <div>
+                  <select id="dropdown" name="dropdown">
+                    <option>Off</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                    <option>Option 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__drop-down">
+                <label for="dropdown"><span>DNA rates</span></label>
+                <div>
+                  <select id="dropdown" name="dropdown">
+                    <option>Monthly</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                    <option>Option 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__drop-down">
+                <label for="dropdown"><span>Community workers summary</span></label>
+                <div>
+                  <select id="dropdown" name="dropdown">
+                    <option>Weekly</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                    <option>Option 5</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
     </div>
 
   </div>

@@ -21,7 +21,7 @@
 @import "components/navigation";
 @import "components/appointments";
 @import "components/table";
-
+@import "components/dashboard"; // Settings > My Profile
 @import "components/my-profile"; // Settings > My Profile
 @import "components/calendar"; // Settings > Calendar
 @import "components/notifications"; // Settings > Notifications
@@ -33,3 +33,7 @@
 @import "components/configuration"; // Settings > Configuration
 @import "components/branding"; // Settings > Branding
 @import "components/service-users"; // Service Users
+@import "components/audit-logging"; // Service Users > Audit Logging
+@import "components/help"; // Help
+
+@import "components/reporting"; // Help

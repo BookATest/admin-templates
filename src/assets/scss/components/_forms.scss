@@ -136,6 +136,30 @@
     }
   }
 
+  &--cancel-booking {
+    .form__checkbox {
+      display: inline-block !important;
+      margin: 0 0 16px 0 !important;
+      padding: 0 !important;
+      width: calc(100% - 16px) !important;
+
+      label {
+        @include dosisSemiBold();
+        font-size: 12px;
+        line-height: 15px;
+        margin: 0 !important;
+        padding: 0 0 0 20px !important;
+        width: calc(100% - 20px) !important;
+        float:right;
+
+        &:after {
+          line-height: 18px;
+        }
+
+      }
+    }
+  }
+
   &__code {
     margin: 0 0 32px 0 !important;
 
@@ -321,7 +345,7 @@
       font-size: 16px;
       border-left: 0;
       vertical-align: middle;
-      margin:0 0 0 8px;
+      margin: 0 0 0 8px;
       cursor: pointer;
     }
 
@@ -566,22 +590,21 @@
 
   &__dropdown-options {
     position: relative;
-    margin:0 32px 32px 0;
+    margin: 0 32px 32px 0;
     width: calc(50% - 16px);
 
     &:nth-child(odd) {
-      margin-right:0;
+      margin-right: 0;
     }
 
     &--add {
       position: relative;
       float: left;
-      button {
 
+      button {
         @include border-top-radius(8px);
         @include border-bottom-radius(8px);
         border: 1px solid $mineShaft50;
-
         background: transparent;
         margin: 0;
         padding: 0 16px;
@@ -606,15 +629,18 @@
           text-decoration: underline;
         }
       }
+
       &:hover {
         background-color: $wildSand;
         border-color: $blueViolet50;
       }
+
       &:active {
         background-color: $wildSand;
         border-color: $blueViolet;
       }
     }
+
     &--edit {
       position: relative;
       float: left;
@@ -623,13 +649,13 @@
         &:after {
           position: absolute;
           bottom: -16px;
-          left:0;
+          left: 0;
           content: 'Press enter to save';
           display: block;
           @include dosisMedium();
           font-size: 10px;
           line-height: 10px;
-          color:$blueViolet;
+          color: $blueViolet;
         }
 
         input {
@@ -642,8 +668,8 @@
         button {
           display: none;
         }
-
       }
+
       input {
         position: relative;
         @include border-left-radius(8px);
@@ -668,6 +694,7 @@
           color: $apricot50;
         }
       }
+
       button {
         @include border-right-radius(8px);
         border: 1px solid $mineShaft50;

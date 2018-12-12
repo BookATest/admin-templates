@@ -1832,6 +1832,7 @@ for (var i = 0; i < popup.length; i++) {
     var showAddAvailability = document.querySelector('.js--popup-block--add-availability');
     var showAvailable = document.querySelector('.js--popup-block--available');
     var showBooked = document.querySelector('.js--popup-block--booked');
+    var showCancelBooking = document.querySelector('.js--popup-block--cancel-booking');
 
     if (type == 'add-availability') {
       showAddAvailability.style.display = 'block';
@@ -1872,6 +1873,25 @@ for (var i = 0; i < popup.length; i++) {
       bookedPatient.innerHTML = getBookedPatient;
       bookedWith.innerHTML = getBookedWith;
       bookedWhere.innerHTML = getBookedWhere;
+    } else if (type == 'cancel-booking') {
+      showCancelBooking.style.display = 'block';
+
+      var _getBookedDate = this.getAttribute('data-date');
+
+      var _getBookedTime = this.getAttribute('data-time');
+
+      var _bookedDate3 = document.querySelector('.js--popup-block--cancel-booking .js--popup-date-text');
+
+      var _bookedTime3 = document.querySelector('.js--popup-block--cancel-booking .js--popup-time-text');
+
+      var _bookedPatient = document.querySelector('.js--popup-block--cancel-booking .js--popup-patient-text');
+
+      var _bookedWith = document.querySelector('.js--popup-block--cancel-booking .js--popup-with-text');
+
+      var _bookedWhere = document.querySelector('.js--popup-block--cancel-booking .js--popup-where-text');
+
+      _bookedDate3.innerHTML = _getBookedDate;
+      _bookedTime3.innerHTML = _getBookedTime;
     } else {}
 
     event.preventDefault();

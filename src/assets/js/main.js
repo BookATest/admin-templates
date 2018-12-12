@@ -56,6 +56,7 @@ for (var i = 0; i < popup.length; i++) {
     let showAddAvailability = document.querySelector('.js--popup-block--add-availability');
     let showAvailable = document.querySelector('.js--popup-block--available');
     let showBooked = document.querySelector('.js--popup-block--booked');
+    let showCancelBooking = document.querySelector('.js--popup-block--cancel-booking');
 
     if (type == 'add-availability') {
 
@@ -100,9 +101,22 @@ for (var i = 0; i < popup.length; i++) {
       bookedWith.innerHTML = getBookedWith;
       bookedWhere.innerHTML = getBookedWhere;
 
+    } else if (type == 'cancel-booking') {
+
+      showCancelBooking.style.display = 'block';
+
+      let getBookedDate = this.getAttribute('data-date');
+      let getBookedTime = this.getAttribute('data-time');
+      let bookedDate = document.querySelector('.js--popup-block--cancel-booking .js--popup-date-text');
+      let bookedTime = document.querySelector('.js--popup-block--cancel-booking .js--popup-time-text');
+      let bookedPatient = document.querySelector('.js--popup-block--cancel-booking .js--popup-patient-text');
+      let bookedWith = document.querySelector('.js--popup-block--cancel-booking .js--popup-with-text');
+      let bookedWhere = document.querySelector('.js--popup-block--cancel-booking .js--popup-where-text');
+
+      bookedDate.innerHTML = getBookedDate;
+      bookedTime.innerHTML = getBookedTime;
+
     } else {
-
-
 
     }
 

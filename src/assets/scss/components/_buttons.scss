@@ -223,7 +223,7 @@
     position: relative;
     background-color: $apricot;
     float: left;
-    width: calc((100% / 3) - 32px);
+    width: calc( ((100% / 3) - 0.1px) - 32px);
     height: auto;
     margin: 16px;
 
@@ -481,7 +481,7 @@
       }
 
       .button__amend__input {
-        width: calc(((100% - 43px) - 80px) - 18px);
+        width: calc( ( ((100% - 43px) - 80px) - 18px) - 2px);
         height: 40px;
         background: transparent;
         float: left;

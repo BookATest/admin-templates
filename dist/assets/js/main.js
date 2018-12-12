@@ -1755,44 +1755,22 @@ if (!window.jscolor) {
 "use strict";
 
 // Main Navigation
-var submenu = document.getElementById('submenu');
-
-if (typeof submenu != 'undefined' && submenu != null) {
-  submenu.onclick = function (event) {
-    event.preventDefault();
-    this.parentElement.classList.toggle('submenu--active');
-    var nodeList = document.querySelectorAll('.main-navigation > nav > ul > li');
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-      for (var _iterator = nodeList[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var el = _step.value;
-
-        if (el != this.parentElement) {
-          el.classList.toggle('submenu--isactive');
-        }
-      }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator.return != null) {
-          _iterator.return();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
-      }
-    }
-  };
-} // 1.0 Calendar - Popup
+// let submenu = document.getElementById('submenu');
+//
+// if (typeof(submenu) != 'undefined' && submenu != null) {
+//   submenu.onclick = function(event) {
+//     event.preventDefault();
+//     this.parentElement.classList.toggle('submenu--active');
+//     var nodeList = document.querySelectorAll('.main-navigation > nav > ul > li');
+//     for (var el of nodeList) {
+//       if (el != this.parentElement) {
+//         el.classList.toggle('submenu--isactive');
+//       }
+//     }
+//   }
+// }
+// 1.0 Calendar - Popup
 // 1.0.1 Popup - View State
-
-
 var popupViewState = false; // default
 
 function popupViewStateFn(popupViewState) {
@@ -1811,11 +1789,13 @@ function popupViewStateFn(popupViewState) {
 
 var popupClose = document.querySelector('.js--popup-close');
 
-popupClose.onclick = function (event) {
-  popupViewState = false;
-  popupViewStateFn(popupViewState);
-  event.preventDefault();
-}; // 1.0.3 Popup - Information
+if (popupClose) {
+  popupClose.onclick = function (event) {
+    popupViewState = false;
+    popupViewStateFn(popupViewState);
+    event.preventDefault();
+  };
+} // 1.0.3 Popup - Information
 
 
 var popup = document.querySelectorAll('.js--popup-open');

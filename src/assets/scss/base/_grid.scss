@@ -40,7 +40,6 @@ $base-layout-grid--1160-up: (
   @include grid-media($base-layout-grid--tablet-up) {
     @include grid-column(2);
   }
-
 }
 
 .base-layout__main {

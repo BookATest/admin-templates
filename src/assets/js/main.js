@@ -1,19 +1,19 @@
 // Main Navigation
 
-let submenu = document.getElementById('submenu');
-
-if (typeof(submenu) != 'undefined' && submenu != null) {
-  submenu.onclick = function(event) {
-    event.preventDefault();
-    this.parentElement.classList.toggle('submenu--active');
-    var nodeList = document.querySelectorAll('.main-navigation > nav > ul > li');
-    for (var el of nodeList) {
-      if (el != this.parentElement) {
-        el.classList.toggle('submenu--isactive');
-      }
-    }
-  }
-}
+// let submenu = document.getElementById('submenu');
+//
+// if (typeof(submenu) != 'undefined' && submenu != null) {
+//   submenu.onclick = function(event) {
+//     event.preventDefault();
+//     this.parentElement.classList.toggle('submenu--active');
+//     var nodeList = document.querySelectorAll('.main-navigation > nav > ul > li');
+//     for (var el of nodeList) {
+//       if (el != this.parentElement) {
+//         el.classList.toggle('submenu--isactive');
+//       }
+//     }
+//   }
+// }
 
 
 // 1.0 Calendar - Popup
@@ -34,10 +34,12 @@ function popupViewStateFn(popupViewState) {
 
 // 1.0.2 Popup - Close
 let popupClose = document.querySelector('.js--popup-close');
-popupClose.onclick = function(event) {
-  popupViewState = false;
-  popupViewStateFn(popupViewState)
-  event.preventDefault();
+if(popupClose) {
+  popupClose.onclick = function(event) {
+    popupViewState = false;
+    popupViewStateFn(popupViewState)
+    event.preventDefault();
+  }
 }
 
 // 1.0.3 Popup - Information

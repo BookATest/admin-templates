@@ -73,9 +73,9 @@
           height: 100%;
 
           &__title {
-            @include grid-column(8, $base-layout-grid);
+            @include grid-column(7, $base-layout-grid);
             height: calc(100% - 48px);
-            width: calc(66.66667% - 48px);
+            width: calc(58.33333% - 48px);
             padding: 24px;
 
             h1 {
@@ -89,10 +89,10 @@
 
           &__logout {
             text-align: right;
-            @include grid-column(4, $base-layout-grid);
+            @include grid-column(5, $base-layout-grid);
             height: calc(100% - 32px);
-            width: calc(33.33333% - 24px);
-            padding: 16px 24px 16px 0;
+            width: calc(41.66667% - 24px);
+            padding: 16px 24px 16px 0 !important;
           }
         }
       }

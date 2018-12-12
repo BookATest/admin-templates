@@ -41,24 +41,29 @@
         <div class="main-navigation">
           <nav>
             <ul>
-              <li><a href="../appointments/default.html" title=""><i class="icon icon--appointments"></i><span>appointments</span></a></li>
-              <li><a href="../reporting/reporting.html" title=""><i class="icon icon--reports"></i><span>reporting</span></a></li>
+              <li><a href="../appointments/default.html" title="Appointments"><i class="icon icon--appointments"></i><span>appointments</span></a></li>
+              <li><a href="../reporting/reporting.html" title="Reporting"><i class="icon icon--reports"></i><span>reporting</span></a></li>
               <li class="submenu">
-                <a href="" title="" id="submenu"><i class="icon icon--settings"></i><span>settings</span></a>
+                <a href="../settings/settings.html" title="Settings"><i class="icon icon--settings"></i><span>settings</span></a>
                 <ul>
-                  <li><a href="../settings/my-profile.html" title=""><span>my profile</span></a></li>
-                  <li><a href="../settings/calendar.html" title=""><span>calendar</span></a></li>
-                  <li><a href="../settings/notifications.html" title=""><span>notifications</span></a></li>
-                  <li><a href="../settings/users.html" title=""><span>users</span></a></li>
-                  <li><a href="../settings/location.html" title=""><span>locations</span></a></li>
-                  <li><a href="../settings/branding.html" title=""><span>branding</span></a></li>
-                  <li><a href="../settings/configuration.html" title=""><span>configuration</span></a></li>
+                  <li><a href="../settings/my-profile.html" title="My profile"><span>my profile</span></a></li>
+                  <li><a href="../settings/calendar.html" title="Calendar"><span>calendar</span></a></li>
+                  <li><a href="../settings/notifications.html" title="Notifications"><span>notifications</span></a></li>
+                  <li><a href="../settings/users.html" title="Users"><span>users</span></a></li>
+                  <li><a href="../settings/location.html" title="Locations"><span>locations</span></a></li>
+                  <li><a href="../settings/branding.html" title="Branding"><span>branding</span></a></li>
+                  <li><a href="../settings/configuration.html" title="Configuration"><span>configuration</span></a></li>
                 </ul>
               </li>
-              <li><a href="../users/users.html" title=""><i class="icon icon--users"></i><span>service users</span></a></li>
+              <li class="submenu">
+                <a href="../users/users.html" title="Service Users"><i class="icon icon--users"></i><span>service users</span></a>
+                <ul>
+                  <li><a href="../users/audit-logging.html" title="Audit Logging"><span>audit logging</span></a></li>
+                </ul>
+              </li>
             </ul>
           </nav>
-          <a href="../help/help.html" class="help"><span>Help</span> <i class="icon icon--help"></i></a>
+          <a href="../help/help.html" title="Help" class="help"><span>Help</span> <i class="icon icon--help"></i></a>
         </div>
       </div>
     </div>
@@ -469,50 +474,88 @@
                       </div>
                       <hr>
                       <div class="available--user">
-                        <button class="button button__primary button__primary--a">Delete</button>
+                        <button class="button button__primary button__primary--a">Amend</button>
                       </div>
                     </form>
                   </div>
                 </div>
 
-                <!-- Booked - View -->
+                <!-- Booked -->
                 <div class="booked js--popup-block js--popup-block--booked" style="display:none;">
                   <div class="popup__header">
                     <span>Booked</span>
                   </div>
                   <div class="popup__main">
-                    <form>
-                      <div class="available--date">
-                        <span class="js--popup-date-text">Sunday 12 March</span>
-                      </div>
-                      <div class="available--time">
-                        <span class="js--popup-time-text">11:00 am</span>
-                      </div>
-                      <hr>
-                      <div class="available--form">
-                        <div class="form__checkbox form__checkbox">
+                    <div class="booked--date">
+                      <span class="js--popup-date-text">Sunday 12 March</span>
+                    </div>
+                    <div class="booked--time">
+                      <span class="js--popup-time-text">11:00 am</span>
+                    </div>
+                    <hr>
+                    <div class="booked--patient">
+                      <span>patient</span><span class="js--popup-patient-text">Robert</span>
+                    </div>
+                    <div class="booked--with">
+                      <span>with</span><span class="js--popup-with-text">Alex</span>
+                    </div>
+                    <div class="booked--where">
+                      <span>where</span><span class="js--popup-where-text">Mesmac Leeds</span>
+                    </div>
+                    <hr>
+                    <div class="booked--user">
+                      <button class="button button__primary button__primary--a js--popup-open" data-type="cancel-booking" data-date="Thursday 15 March" data-time="11:00am">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Cancel Booking -->
+                <div class="cancel-booking js--popup-block js--popup-block--cancel-booking" style="display:none;">
+                  <div class="popup__header">
+                    <span>Cancel Booking</span>
+                  </div>
+                  <div class="popup__main">
+                    <div class="cancel-booking--date">
+                      <span class="js--popup-date-text">Sunday 12 March</span>
+                    </div>
+                    <div class="cancel-booking--time">
+                      <span class="js--popup-time-text">11:00 am</span>
+                    </div>
+                    <hr>
+                    <div class="">
+                      <form class="form form--cancel-booking">
+                        <div class="form__checkbox">
                           <div>
-                            <input id="checkbox" name="checkbox" type="checkbox" checked>
-                            <label for="checkbox">One off</label>
+                            <input id="email" name="email" type="checkbox">
+                            <label for="email">Notify user via Email/SMS</label>
                           </div>
                         </div>
-                        <div class="form__drop-down form__drop-down">
-                          <label for="dropdown">Repeatable</label>
+                        <div class="form__checkbox">
                           <div>
-                            <select id="dropdown" name="dropdown">
-                              <option>None</option>
-                              <option>Daily</option>
-                              <option>Weekly</option>
-                              <option>Monthly</option>
-                            </select>
+                            <input id="sms" name="sms" type="checkbox">
+                            <label for="sms">Notify community worker via Email/SMS</label>
                           </div>
                         </div>
+                      </form>
+                    </div>
+                    <hr>
+
+
+                    <div class="available--warning">
+                      <div class="card card--warning">
+                        <div class="warning__icon">
+                          <i class="icon icon--warning"></i>
+                        </div>
+                        <div class="warning__content">
+                          <p>Once you cancel the booking, this can’t be undone.</p>
+                        </div>
                       </div>
-                      <hr>
-                      <div class="available--user">
-                        <button class="button button__primary button__primary--a">Delete</button>
-                      </div>
-                    </form>
+                    </div>
+
+                    <div class="cancel-booking--user">
+                      <button class="button button__primary button__primary--a">Confirm</button>
+                    </div>
+
                   </div>
                 </div>
 

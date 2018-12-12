@@ -1,6 +1,6 @@
 .branding {
   background-color: $wildSand;
-  
+
   h2 {
     @include innerPageTitle();
     margin: 0 0 40px;
@@ -31,6 +31,13 @@
       width:180px;
       vertical-align: top;
     }
+    .button {
+      display: inline-block;
+      input {
+        margin:5px;
+        color: transparent !important;
+      }
+    }
     margin:0 0 32px 0;
   }
   &__key-colour {
@@ -38,6 +45,13 @@
       display: inline-block;
       width:180px;
       vertical-align: top;
+    }
+    .button {
+      display: inline-block;
+      input {
+        margin:5px;
+        color: transparent !important;
+      }
     }
     margin:0 0 32px 0;
   }

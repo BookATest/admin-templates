@@ -21,7 +21,8 @@
     padding: 0;
     width: 100%;
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 
     &__upcoming-appointments {
       @include grid-column(12, $base-layout-grid);
@@ -69,7 +70,8 @@
     padding: 16px;
     width: calc(100% - 32px);
     height: calc(100vh - 32px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
   }
 
   .my-profile {
@@ -77,7 +79,8 @@
     padding: 32px;
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 
     &__account-details {
       @include grid-column(12, $base-layout-grid);
@@ -104,7 +107,8 @@
     padding: 32px;
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 
     &__my-calendar-feed {
       @include grid-column(12, $base-layout-grid);
@@ -131,7 +135,8 @@
     padding: 32px;
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
   }
 
   .users {
@@ -139,7 +144,8 @@
     padding: 32px;
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 
     &__intro {
       @include grid-column(12, $base-layout-grid);
@@ -166,7 +172,8 @@
     padding: 32px;
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 
     &__intro {
       @include grid-column(12, $base-layout-grid);
@@ -204,7 +211,8 @@
     padding: 32px;
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 
     &__intro {
       @include grid-column(12, $base-layout-grid);
@@ -231,7 +239,8 @@
     padding: 32px;
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 
     &__form {
       @include grid-column(12, $base-layout-grid);
@@ -254,7 +263,8 @@
     padding: 32px;
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 
     &__intro {
       @include grid-column(12, $base-layout-grid);
@@ -288,7 +298,8 @@
     padding: 32px;
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 
     &__intro {
       @include grid-column(12, $base-layout-grid);
@@ -336,7 +347,8 @@
     padding: 32px;
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 
     > div {
       @include grid-column(6, $base-layout-grid);
@@ -348,7 +360,8 @@
     padding: 32px;
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 
     &__intro {
       @include grid-column(8, $base-layout-grid);
@@ -375,7 +388,8 @@
     padding: 32px;
     width: calc(100% - 64px);
     height: calc(100vh - 64px);
-    overflow: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
 
     &__filter {
       @include grid-column(12, $base-layout-grid);
@@ -436,10 +450,10 @@
 
       > div {
         &:nth-child(1) {
-          @include grid-column(6, $base-layout-grid);
+          @include grid-column(8, $base-layout-grid);
         }
         &:nth-child(2) {
-          @include grid-column(6, $base-layout-grid);
+          @include grid-column(4, $base-layout-grid);
           text-align: right;
         }
       }
@@ -450,12 +464,4 @@
       @include grid-column(12, $base-layout-grid);
     }
   }
-}
-
-textarea,
-input[type="text"],
-input[type="button"],
-input[type="submit"] {
-     -webkit-appearance: none;
-     border-radius: 0;
 }

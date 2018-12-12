@@ -142,3 +142,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+select::-ms-expand {
+    display: none;
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 0;
+}

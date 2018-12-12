@@ -6,11 +6,26 @@ $base-layout-grid: (
   columns: 12,
   gutter: 0,
 );
+
 $base-layout-grid--tablet-up: (
   columns: 12,
   gutter: 0,
   media: "(min-width: 768px)",
 );
+
+$base-layout-grid--lg-tablet-up: (
+  columns: 12,
+  gutter: 0,
+  media: "(min-width: 1025px)",
+);
+
+$base-layout-grid--1160-up: (
+  columns: 12,
+  gutter: 0,
+  media: "(min-width: 1161px)",
+);
+
+
 
 .base-layout {
   @include grid-container;

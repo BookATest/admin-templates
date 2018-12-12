@@ -25,8 +25,10 @@ function popupViewStateFn(popupViewState) {
   let main = document.querySelector('.js--calendar__main');
   if (viewState === true) {
     main.classList.add('calendar__main--w-sidebar');
+    document.querySelector('.js--popup-class').classList.add('active');
   } else {
     main.classList.remove('calendar__main--w-sidebar');
+    document.querySelector('.js--popup-class').classList.remove('active');
   }
 }
 

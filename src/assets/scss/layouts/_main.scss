@@ -383,15 +383,40 @@
       margin: 0;
       padding: 0 0 32px;
 
+
       .form > div {
         &:nth-child(1) {
-          @include grid-column(3, $base-layout-grid);
+
+          @include grid-column(12, $base-layout-grid);
           text-align: left;
+          margin-bottom:16px;
+
+          label {
+            width:50px;
+          }
+
+          @include grid-media($base-layout-grid--1160-up) {
+            @include grid-column(3, $base-layout-grid);
+            text-align: left;
+            margin-bottom:0;
+
+            label {
+              width:auto;
+            }
+          }
+
+
         }
 
         &:nth-child(2) {
-          @include grid-column(9, $base-layout-grid);
-          text-align: right;
+          @include grid-column(12, $base-layout-grid);
+          text-align: left;
+
+          @include grid-media($base-layout-grid--1160-up) {
+            @include grid-column(9, $base-layout-grid);
+            text-align: right;
+          }
+
         }
       }
     }
@@ -425,4 +450,12 @@
       @include grid-column(12, $base-layout-grid);
     }
   }
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 0;
 }

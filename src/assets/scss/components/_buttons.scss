@@ -14,16 +14,16 @@
     // 5.1.1 Size A
     &--a {
       width: auto;
-      height: 45px;
+      min-height: calc(45px - 16px);
       margin: 0;
-      padding: 0 40px;
+      padding: 8px 40px;
     }
     // 5.1.2 Size B
     &--b {
       width: auto;
-      height: 40px;
+      min-height: calc(40px - 16px);
       margin: 0;
-      padding: 0 32px;
+      padding: 8px 32px;
     }
 
     &:focus {
@@ -62,17 +62,17 @@
     &--a {
       @include innerPageTitle();
       width: auto;
-      height: 48px;
+      min-height: calc(48px - 16px);
       margin: 0;
-      padding: 0 40px;
+      padding: 8px 40px;
     }
     // 5.2.2 Size B
     &--b {
       @include innerPageHeader();
       width: auto;
-      height: 40px;
+      min-height: calc(40px - 16px);
       margin: 0;
-      padding: 0 32px;
+      padding: 8px 32px;
     }
 
     &:focus {
@@ -481,7 +481,7 @@
       }
 
       .button__amend__input {
-        width: calc(((100% - 43px) - 80px) - 17px);
+        width: calc(((100% - 43px) - 80px) - 18px);
         height: 40px;
         background: transparent;
         float: left;
